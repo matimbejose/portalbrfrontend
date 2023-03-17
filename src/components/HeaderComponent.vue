@@ -1,42 +1,7 @@
 <template>
   <div class="main">
-    <!-- ======= Top Bar ======= -->
-    <section
-      class="d-flex align-items-center"
-      style="background-color: #00a859 !important"
-    >
-      <div
-        class="container d-sm-flex justify-content-center justify-content-md-between"
-      >
-        <div class="contact-info d-flex align-items-center">
-          <a href="tel:" class="text-white text-decoration-none"
-            >(88) 3649-1136
-          </a>
-          <a href="#" class="text-white text-decoration-none ms-3"
-            ><span>Transparência</span></a
-          >
-          <a href="#" class="text-white text-decoration-none ms-3">Ouvidoria</a>
-          <a href="#" class="text-white text-decoration-none ms-3">E-sic</a>
-        </div>
-        <div class="row justify-content-start"></div>
-        <div class="social-links d-none d-md-flex align-items-center">
-          <a
-            href="https://www.facebook.com/pmmeruoca"
-            target="_blank"
-            class="facebook"
-          ></a>
-          <a
-            href="https://www.instagram.com/prefeiturademeruoca/"
-            target="_blank"
-            class="instagram"
-          ></a>
-        </div>
-      </div>
-    </section>
-    <!-- ======= /Top Bar ======= -->
-
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-white bg-white static-top">
+    <nav style="position: fixed; top: 0; left: 0; right: 0;" class="navbar navbar-expand-lg navbar-white bg-white static-top">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img
@@ -302,7 +267,7 @@
     <!-- ======= Imagem Principal ======= -->
     <section id="hero" class="d-flex align-items-center">
       <div class="container py-5">
-        <h1 class="text-center">Bem vindo ao portal da</h1>
+        <h1 class="text-center" style="margin-top: 30px">Bem vindo ao portal da</h1>
         <h1 class="text-center">Prefeitura de Meruoca</h1>
         <br />
         <center>
@@ -331,109 +296,76 @@
     </section>
     <!-- End Imagem Principal -->
 
-    <!-- /Menu População -->
-    <section
-      id="search-course"
-      class="search-course-section"
-      style="background-color: #00a859 !important"
-    >
-      <div class="container">
-        <div class="search-counter-up">
-          <div class="row">
-            <div class="col-sm">
-              <div class="counter-icon-number">
-                <div class="counter-icon">
-                  <i class="bi bi-people-fill"></i>
-                </div>
-                <div class="counter-number">
-                  <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="13"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span
-                  ><span>.000+</span>
-                  <p>População</p>
-                </div>
-              </div>
-            </div>
-            <!-- /counter -->
-
-            <div class="col-sm-2">
-              <div class="counter-icon-number">
-                <div class="counter-icon">
-                  <i class="bi bi-house-fill"></i>
-                </div>
-                <div class="counter-number">
-                  <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="3"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span>
-                  <p>Distritos</p>
-                </div>
-              </div>
-            </div>
-            <!-- /counter -->
-
-            <div class="col-sm-2">
-              <div class="counter-icon-number">
-                <div class="counter-icon">
-                  <i class="bi bi-people-fill"></i>
-                </div>
-                <div class="counter-number">
-                  <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="11"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span>
-                  <p>Bairros</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm">
-              <div class="counter-icon-number">
-                <div class="counter-icon">
-                  <i class="bi bi-house-fill"></i>
-                </div>
-                <div class="counter-number">
-                  <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="137"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span
-                  ><span> anos</span>
-                  <p class="text-center">13 de Novembro</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm">
-              <div class="counter-icon-number">
-                <div class="counter-icon">
-                  <i class="bi bi-pin-map-fill"></i>
-                </div>
-                <div class="counter-number">
-                  <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="283"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span
-                  ><span>.538,00</span>
-                  <p>Área</p>
-                </div>
-              </div>
-            </div>
+<!-- /Menu População -->
+<section id="search-course" class="search-course-section" style="background-color: #00a859 !important">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-sm">
+        <div class="counter-icon-number">
+          <div class="counter-icon">
+            <i class="bi bi-people-fill"></i>
+          </div>
+          <div class="counter-number">
+            <span class="purecounter" data-purecounter-start="0" data-purecounter-end="13" data-purecounter-duration="1"></span><span>.000+</span>
+            <p>População</p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- /Menu População -->
+      <!-- /counter -->
+
+      <div class="col-sm-2">
+        <div class="counter-icon-number">
+          <div class="counter-icon">
+            <i class="bi bi-house-fill"></i>
+          </div>
+          <div class="counter-number">
+            <span class="purecounter" data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1"></span>
+            <p>Distritos</p>
+          </div>
+        </div>
+      </div>
+      <!-- /counter -->
+
+      <div class="col-sm-2">
+        <div class="counter-icon-number">
+          <div class="counter-icon">
+            <i class="bi bi-people-fill"></i>
+          </div>
+          <div class="counter-number">
+            <span class="purecounter" data-purecounter-start="0" data-purecounter-end="11" data-purecounter-duration="1"></span>
+            <p>Bairros</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm">
+        <div class="counter-icon-number">
+          <div class="counter-icon">
+            <i class="bi bi-house-fill"></i>
+          </div>
+          <div class="counter-number">
+            <span class="purecounter" data-purecounter-start="0" data-purecounter-end="137" data-purecounter-duration="1"></span><span> anos</span>
+            <p class="text-center">13 de Novembro</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm">
+        <div class="counter-icon-number">
+          <div class="counter-icon">
+            <i class="bi bi-pin-map-fill"></i>
+          </div>
+          <div class="counter-number">
+            <span class="purecounter" data-purecounter-start="0" data-purecounter-end="283" data-purecounter-duration="1"></span><span>.538,00</span>
+            <p>Área</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Menu População -->
+
   </div>
 </template>
 
