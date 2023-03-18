@@ -128,5 +128,6 @@ export default {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 </style>

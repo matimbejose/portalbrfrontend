@@ -13,7 +13,6 @@
         passages, and more recently with desktop publishing software like Aldus
         PageMaker including versions of Lorem Ipsum
       </p>
-
       <p>
         Why do we use it? It is a long established fact that a reader will be
         distracted by the readable content of a page when looking at its layout.
