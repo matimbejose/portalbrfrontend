@@ -81,7 +81,7 @@
                 aria-expanded="false"
               >
                 SECRETARIAS
-              </a>
+            </a>
 
               <ul
                 class="dropdown-menu dropdown-menu-end"
@@ -308,6 +308,7 @@
         <div class="search-counter-up">
           <div class="row">
             <div class="col-sm">
+
               <div class="counter-icon-number">
                 <div class="counter-icon">
                   <i class="bi bi-people-fill"></i>
@@ -317,6 +318,8 @@
                   <p style="font-size: 15px !important">População</p>
                 </div>
               </div>
+
+              
             </div>
             <!-- /counter -->
 
@@ -326,13 +329,8 @@
                   <i class="bi bi-house-fill"></i>
                 </div>
                 <div class="counter-number">
-                  <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="3"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span>
-                  <p>Distritos</p>
+                  <p>3</p>
+                  <p style="font-size: 15px !important">Distritos</p>
                 </div>
               </div>
             </div>
@@ -344,13 +342,8 @@
                   <i class="bi bi-people-fill"></i>
                 </div>
                 <div class="counter-number">
-                  <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="11"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span>
-                  <p >Bairros</p>
+                  <p>18</p>
+                  <p style="font-size: 15px !important">Bairros</p>
                 </div>
               </div>
             </div>
