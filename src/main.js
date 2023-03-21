@@ -13,12 +13,14 @@ import {
     faLocationDot,
     faEnvelope,
     faPhone,
-    faCheck
+    faCheck,
+    faUsers,
+    faHouse
 
 } from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
-library.add(faUserSecret,faLocationDot,faEnvelope,faPhone,faCheck)
+library.add(faUserSecret,faLocationDot,faEnvelope,faPhone,faCheck,faUsers,faHouse)
 
 
 import "bootstrap/dist/css/bootstrap.min.css";

@@ -81,7 +81,7 @@
                 aria-expanded="false"
               >
                 SECRETARIAS
-            </a>
+              </a>
 
               <ul
                 class="dropdown-menu dropdown-menu-end"
@@ -294,88 +294,123 @@
             </div>
           </div>
         </center>
-      </div>
-    </section>
-    <!-- End Imagem Principal -->
+        <!-- /Menu População -->
+        <div
+          id="search-course"
+          class="search-course-section mt-5 rounded-top rounded-3"
+          style="background-color: #00a859"
+        >
+          <div class="container">
+            <div class="search-counter-up">
+              <div class="row">
 
-    <!-- /Menu População -->
-    <section
-      id="search-course"
-      class="search-course-section"
-      style="background-color: #00a859; height: 88"
-    >
-      <div class="container">
-        <div class="search-counter-up">
-          <div class="row">
-            <div class="col-sm">
+                <!-- /counter -->
+                <div class="col-sm-3 mb">
+                  <div class="counter-number">
+                    <div class="col-sm">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <font-awesome-icon
+                          icon="fa-solid fa-users"
+                          style="font-size: 40px"
+                          class="order-1"
+                        />
+                        <p class="order-2 mb-0">13.000+</p>
+                      </div>
+                    </div>
+                    <div class="border border-white border-2 h-80"></div>
+                    <p style="font-size: 15px !important">População</p>
+                  </div>
+                </div>
+                <!-- /counter -->
 
-              <div class="counter-icon-number">
-                <div class="counter-icon">
-                  <i class="bi bi-people-fill"></i>
+                <!-- /counter -->
+                <div class="col-sm-2 mb">
+                  <div class="counter-number">
+                    <div class="col-sm">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <font-awesome-icon
+                          icon="fa-solid fa-house"
+                          style="font-size: 40px"
+                          class="order-1"
+                        />
+                        <p class="order-2 mb-0 ms-3">3</p>
+                      </div>
+                    </div>
+                    <div class="border border-white border-2 h-80"></div>
+                    <p style="font-size: 15px !important">Distritos</p>
+                  </div>
                 </div>
-                <div class="counter-number">
-                  <p>200.000+</p>
-                  <p style="font-size: 15px !important">População</p>
-                </div>
-              </div>
 
-              
-            </div>
-            <!-- /counter -->
+                <!-- /counter -->
 
-            <div class="col-sm-2">
-              <div class="counter-icon-number">
-                <div class="counter-icon">
-                  <i class="bi bi-house-fill"></i>
+                <div class="col-sm-2 mb">
+                  <div class="counter-number">
+                    <div class="col-sm">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <font-awesome-icon
+                          icon="fa-solid fa-users"
+                          style="font-size: 40px"
+                          class="order-1"
+                        />
+                        <p class="order-2 mb-0 ms-3">11</p>
+                      </div>
+                    </div>
+                    <div class="border border-white border-2 h-80"></div>
+                    <p style="font-size: 15px !important">Bairros</p>
+                  </div>
                 </div>
-                <div class="counter-number">
-                  <p>3</p>
-                  <p style="font-size: 15px !important">Distritos</p>
-                </div>
-              </div>
-            </div>
-            <!-- /counter -->
 
-            <div class="col-sm-2">
-              <div class="counter-icon-number">
-                <div class="counter-icon">
-                  <i class="bi bi-people-fill"></i>
+                <div class="col-sm-2 mb">
+                  <div class="counter-number">
+                    <div class="col-sm">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <font-awesome-icon
+                          icon="fa-solid fa-users"
+                          style="font-size: 40px"
+                          class="order-1"
+                        />
+                        <p class="order-2 mb-0 ms-3">137anos</p>
+                      </div>
+                    </div>
+                    <div class="border border-white border-2 h-80"></div>
+                    <p style="font-size: 15px !important">13 de Novembro</p>
+                  </div>
                 </div>
-                <div class="counter-number">
-                  <p>18</p>
-                  <p style="font-size: 15px !important">Bairros</p>
-                </div>
-              </div>
-            </div>
 
-            <div class="col-sm">
-              <div class="counter-icon-number">
-                <div class="counter-icon">
-                  <i class="bi bi-house-fill"></i>
-                </div>
-                <div class="counter-number">
-                  <p>137  anos</p>
-                  <p style="font-size: 15px !important">13 de Novembro</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm">
-              <div class="counter-icon-number">
-                <div class="counter-icon">
-                  <i class="bi bi-pin-map-fill"></i>
-                </div>
-                <div class="counter-number">
-                  <p>283.538,00</p>
-                  <p style="font-size: 15px !important">Área</p>
+                <div class="col-sm-3 mb">
+                  <div class="counter-number">
+                    <div class="col-sm">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <font-awesome-icon
+                          icon="fa-solid fa-users"
+                          style="font-size: 40px"
+                          class="order-1"
+                        />
+                        <p class="order-2 mb-0 ms-3">283.538,00</p>
+                      </div>
+                    </div>
+                    <div class="border border-white border-2 h-80"></div>
+                    <p style="font-size: 15px !important">Área</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <!--End /Menu População -->
       </div>
     </section>
-    <!-- /Menu População -->
+    <!-- End Imagem Principal -->
   </div>
 </template>
 
@@ -389,7 +424,7 @@ export default {
 
 <style>
 #hero {
-  background-image: url(C:\wamp64\www\SenasBr\portalfrotend\public\assets\img\cidade.jpg);
+  background-image: url(C:\wamp64\www\SenasBr\portalfrotend\src\assets\cidade.jpg);
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
   color: white;
@@ -399,15 +434,8 @@ export default {
   background-attachment: fixed;
 }
 
-.search-course-section p {
+#search-course p {
   font-size: 30px;
-  color: #FFF;
+  color: #fff;
 }
-
-
-
-/* 
-#hero.container {
-  padding: 20px;
-} */
 </style>
