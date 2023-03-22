@@ -121,7 +121,7 @@ export default {
 
 <style>
 #contato {
-  background-image: url(C:\wamp64\www\SenasBr\portalfrotend\public\assets\img\cidade.jpg);
+  background-image: url(../assets/cidade.jpg);
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
   color: white;

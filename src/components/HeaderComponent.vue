@@ -424,7 +424,7 @@ export default {
 
 <style>
 #hero {
-  background-image: url(C:\wamp64\www\SenasBr\portalfrotend\src\assets\cidade.jpg);
+  background-image: url(../assets/cidade.jpg);
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
   color: white;
