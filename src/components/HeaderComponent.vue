@@ -413,61 +413,43 @@
 
     <!-- ======= MENUS ======= -->
     <section id="menu" class="featured-services py-5">
-      <div class="container" data-aos="fade-up">
+      <div class="container">
         <div class="row gx-5 justify-content-center">
           <div class="col-sm-6 col-lg-3">
-            <div
-              class="icon-box text-center"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
+            <div class="icon-box text-center">
               <font-awesome-icon
                 :icon="['fas', 'circle-exclamation']"
-                style="fontsize: 50px"
+                style="font-size: 50px"
               />
-              <h3 class="title"><a href="#">Portal da Transparência</a></h3>
+              <h3><a class="title" href="#">Portal da Transparência</a></h3>
             </div>
           </div>
           <div class="col-sm-6 col-lg-3">
-            <div
-              class="icon-box text-center"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
+            <div class="icon-box text-center">
               <font-awesome-icon
                 icon="fa-solid fa-money-bill"
-                style="fontsize: 50px"
+                style="font-size: 50px"
               />
-              <h3 class="title"><a href="#">Gestão Fiscal LRF</a></h3>
+              <h3><a class="title" href="#">Gestão Fiscal LRF</a></h3>
             </div>
           </div>
           <div class="col-sm-6 col-lg-3">
-            <div
-              class="icon-box text-center"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
+            <div class="icon-box text-center">
               <font-awesome-icon
                 icon="fa-regular fa-message"
-                style="fontsize: 50px"
+                style="font-size: 50px"
               />
-              <h3 class="title"><a href="#">Ouvidoria Municipal</a></h3>
+              <h3><a class="title" href="#">Ouvidoria Municipal</a></h3>
             </div>
           </div>
           <div class="col-sm-6 col-lg-3">
-            <div
-              class="icon-box text-center"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
+            <div class="icon-box text-center">
               <font-awesome-icon
                 icon="fa-solid fa-exclamation"
-                style="fontsize: 50px"
+                style="font-size: 50px"
               />
-              <h3 class="title">
-                <a href="#" class="d-inline text-decoration-none"
-                  >Acesso a Informação</a
-                >
+              <h3>
+                <a href="#" class="title">Acesso a Informação</a>
               </h3>
             </div>
           </div>
@@ -501,5 +483,82 @@ export default {
 #search-course p {
   font-size: 30px;
   color: #fff;
+}
+
+.title {
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+
+.icon-box {
+  position: relative;
+  z-index: 1; /* Certifique-se de que o elemento pai tenha um valor de z-index maior que o pseudo-elemento ::after */
+}
+
+.icon-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #da4849;
+  z-index: -1; /* Certifique-se de que o pseudo-elemento ::after tenha um valor de z-index menor que o elemento pai */
+  transition: height 0.2s ease-out;
+}
+
+.icon-box:hover::after {
+  height: 100%;
+}
+
+.icon-box:hover {
+  background-color: white;
+  color: black;
+}
+
+.icon-box:hover a {
+  color: white;
+}
+
+#hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar a,
+.navbar a:focus {
+  font-size: 12px;
+  font-weight: 600;
+}
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: #da4849;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
+  color: #da4849;
+}
+
+navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-weight: 400;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: #da4849;
 }
 </style>
