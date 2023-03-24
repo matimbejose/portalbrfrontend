@@ -15,12 +15,25 @@ import {
     faPhone,
     faCheck,
     faUsers,
-    faHouse
+    faHouse,
+    faMapLocationDot,
+    faCircleExclamation,
+    faMoneyBill,
+    faExclamation
 
 } from '@fortawesome/free-solid-svg-icons'
 
+
+import {
+
+    faMessage
+
+} from '@fortawesome/free-regular-svg-icons'
+
+
+
 /* add icons to the library */
-library.add(faUserSecret,faLocationDot,faEnvelope,faPhone,faCheck,faUsers,faHouse)
+library.add(faUserSecret,faLocationDot,faEnvelope,faPhone,faCheck,faUsers,faHouse,faMapLocationDot,faCircleExclamation,faMoneyBill,faMessage,faExclamation)
 
 
 import "bootstrap/dist/css/bootstrap.min.css";

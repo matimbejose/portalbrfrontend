@@ -303,7 +303,6 @@
           <div class="container">
             <div class="search-counter-up">
               <div class="row">
-
                 <!-- /counter -->
                 <div class="col-sm-3 mb">
                   <div class="counter-number">
@@ -373,7 +372,7 @@
                         class="d-flex justify-content-between align-items-center"
                       >
                         <font-awesome-icon
-                          icon="fa-solid fa-users"
+                          icon="fa-solid fa-house"
                           style="font-size: 40px"
                           class="order-1"
                         />
@@ -392,7 +391,7 @@
                         class="d-flex justify-content-between align-items-center"
                       >
                         <font-awesome-icon
-                          icon="fa-solid fa-users"
+                          icon="fa-solid fa-map-location-dot"
                           style="font-size: 40px"
                           class="order-1"
                         />
@@ -411,6 +410,71 @@
       </div>
     </section>
     <!-- End Imagem Principal -->
+
+    <!-- ======= MENUS ======= -->
+    <section id="menu" class="featured-services py-5">
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-5 justify-content-center">
+          <div class="col-sm-6 col-lg-3">
+            <div
+              class="icon-box text-center"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <font-awesome-icon
+                :icon="['fas', 'circle-exclamation']"
+                style="fontsize: 50px"
+              />
+              <h3 class="title"><a href="#">Portal da Transparência</a></h3>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div
+              class="icon-box text-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <font-awesome-icon
+                icon="fa-solid fa-money-bill"
+                style="fontsize: 50px"
+              />
+              <h3 class="title"><a href="#">Gestão Fiscal LRF</a></h3>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div
+              class="icon-box text-center"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <font-awesome-icon
+                icon="fa-regular fa-message"
+                style="fontsize: 50px"
+              />
+              <h3 class="title"><a href="#">Ouvidoria Municipal</a></h3>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div
+              class="icon-box text-center"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <font-awesome-icon
+                icon="fa-solid fa-exclamation"
+                style="fontsize: 50px"
+              />
+              <h3 class="title">
+                <a href="#" class="d-inline text-decoration-none"
+                  >Acesso a Informação</a
+                >
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /MENUS -->
   </div>
 </template>
 
