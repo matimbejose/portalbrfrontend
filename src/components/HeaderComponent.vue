@@ -262,201 +262,6 @@
       </div>
     </nav>
     <!-- End navihation -->
-
-    <!-- ======= Imagem Principal ======= -->
-    <section id="hero" class="d-flex align-items-center">
-      <div class="container py-5">
-        <h1 class="text-center" style="margin-top: 30px">
-          Bem vindo ao portal da
-        </h1>
-        <h1 class="text-center" style="margin-bottom: 70px">
-          Prefeitura de Meruoca
-        </h1>
-        <center>
-          <div class="col-sm-6">
-            <div class="input-group">
-              <input
-                class="form-control"
-                type="search"
-                placeholder="Posso Ajudar Você?"
-                aria-label="Search"
-                style="border-right: none"
-              />
-              <div class="input-group-append">
-                <button
-                  type="button"
-                  class="btn btn-success btn-lg btn-block"
-                  style="padding: 15px; border-radius: 0px"
-                >
-                  Pesquisar
-                </button>
-              </div>
-            </div>
-          </div>
-        </center>
-        <!-- /Menu População -->
-        <div
-          id="search-course"
-          class="search-course-section mt-5 rounded-top rounded-3"
-          style="background-color: #00a859"
-        >
-          <div class="container">
-            <div class="search-counter-up">
-              <div class="row">
-                <!-- /counter -->
-                <div class="col-sm-3 mb">
-                  <div class="counter-number">
-                    <div class="col-sm">
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <font-awesome-icon
-                          icon="fa-solid fa-users"
-                          style="font-size: 40px"
-                          class="order-1"
-                        />
-                        <p class="order-2 mb-0">13.000+</p>
-                      </div>
-                    </div>
-                    <div class="border border-white border-2 h-80"></div>
-                    <p style="font-size: 15px !important">População</p>
-                  </div>
-                </div>
-                <!-- /counter -->
-
-                <!-- /counter -->
-                <div class="col-sm-2 mb">
-                  <div class="counter-number">
-                    <div class="col-sm">
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <font-awesome-icon
-                          icon="fa-solid fa-house"
-                          style="font-size: 40px"
-                          class="order-1"
-                        />
-                        <p class="order-2 mb-0 ms-3">3</p>
-                      </div>
-                    </div>
-                    <div class="border border-white border-2 h-80"></div>
-                    <p style="font-size: 15px !important">Distritos</p>
-                  </div>
-                </div>
-
-                <!-- /counter -->
-
-                <div class="col-sm-2 mb">
-                  <div class="counter-number">
-                    <div class="col-sm">
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <font-awesome-icon
-                          icon="fa-solid fa-users"
-                          style="font-size: 40px"
-                          class="order-1"
-                        />
-                        <p class="order-2 mb-0 ms-3">11</p>
-                      </div>
-                    </div>
-                    <div class="border border-white border-2 h-80"></div>
-                    <p style="font-size: 15px !important">Bairros</p>
-                  </div>
-                </div>
-
-                <div class="col-sm-2 mb">
-                  <div class="counter-number">
-                    <div class="col-sm">
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <font-awesome-icon
-                          icon="fa-solid fa-house"
-                          style="font-size: 40px"
-                          class="order-1"
-                        />
-                        <p class="order-2 mb-0 ms-3">137anos</p>
-                      </div>
-                    </div>
-                    <div class="border border-white border-2 h-80"></div>
-                    <p style="font-size: 15px !important">13 de Novembro</p>
-                  </div>
-                </div>
-
-                <div class="col-sm-3 mb">
-                  <div class="counter-number">
-                    <div class="col-sm">
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <font-awesome-icon
-                          icon="fa-solid fa-map-location-dot"
-                          style="font-size: 40px"
-                          class="order-1"
-                        />
-                        <p class="order-2 mb-0 ms-3">283.538,00</p>
-                      </div>
-                    </div>
-                    <div class="border border-white border-2 h-80"></div>
-                    <p style="font-size: 15px !important">Área</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--End /Menu População -->
-      </div>
-    </section>
-    <!-- End Imagem Principal -->
-
-    <!-- ======= MENUS ======= -->
-    <section id="menu" class="featured-services py-5">
-      <div class="container">
-        <div class="row gx-5 justify-content-center">
-          <div class="col-sm-6 col-lg-3">
-            <div class="icon-box text-center">
-              <font-awesome-icon
-                :icon="['fas', 'circle-exclamation']"
-                style="font-size: 50px"
-              />
-              <h3><a class="title" href="#">Portal da Transparência</a></h3>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="icon-box text-center">
-              <font-awesome-icon
-                icon="fa-solid fa-money-bill"
-                style="font-size: 50px"
-              />
-              <h3><a class="title" href="#">Gestão Fiscal LRF</a></h3>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="icon-box text-center">
-              <font-awesome-icon
-                icon="fa-regular fa-message"
-                style="font-size: 50px"
-              />
-              <h3><a class="title" href="#">Ouvidoria Municipal</a></h3>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="icon-box text-center">
-              <font-awesome-icon
-                icon="fa-solid fa-exclamation"
-                style="font-size: 50px"
-              />
-              <h3>
-                <a href="#" class="title">Acesso a Informação</a>
-              </h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /MENUS -->
   </div>
 </template>
 
@@ -495,7 +300,7 @@ export default {
 
 .icon-box {
   position: relative;
-  z-index: 1; /* Certifique-se de que o elemento pai tenha um valor de z-index maior que o pseudo-elemento ::after */
+  z-index: 1; 
 }
 
 .icon-box::after {
@@ -506,7 +311,7 @@ export default {
   width: 100%;
   height: 0;
   background-color: #da4849;
-  z-index: -1; /* Certifique-se de que o pseudo-elemento ::after tenha um valor de z-index menor que o elemento pai */
+  z-index: -1; 
   transition: height 0.2s ease-out;
 }
 
