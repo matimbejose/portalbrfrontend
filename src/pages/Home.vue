@@ -274,7 +274,29 @@
                     />
                   </div>
                   <div class="col-md-8">
-                    <i class="bi bi-calendar3"></i> 18/10/2022
+                    <font-awesome-icon icon="fa-solid fa-calendar-days" />18/10/2022
+                    <h5 class="text-left">18 DE OUTUBRO - DIA DO MÉDICO!</h5>
+
+                    <p style="display: inline-block; align: top">
+                      Nossas felicitações neste dia para todos aqueles que
+                      cuidam da nossa saúde [...]
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-light mb-3">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img
+                      src="/assets/img/01.png"
+                      class="rounded float-start img-fluid"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <font-awesome-icon icon="fa-solid fa-calendar-days" />18/10/2022
 
                     <h5 class="text-left">18 DE OUTUBRO - DIA DO MÉDICO!</h5>
 
@@ -297,7 +319,7 @@
                     />
                   </div>
                   <div class="col-md-8">
-                    <i class="bi bi-calendar3"></i> 18/10/2022
+                   <font-awesome-icon icon="fa-solid fa-calendar-days" />18/10/2022
 
                     <h5 class="text-left">18 DE OUTUBRO - DIA DO MÉDICO!</h5>
 
@@ -309,31 +331,10 @@
                 </div>
               </div>
             </div>
-
-            <div class="card bg-light mb-3">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-3">
-                    <img
-                      src="/assets/img/01.png"
-                      class="rounded float-start img-fluid"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <i class="bi bi-calendar3"></i> 18/10/2022
-
-                    <h5 class="text-left">18 DE OUTUBRO - DIA DO MÉDICO!</h5>
-
-                    <p style="display: inline-block; align: top">
-                      Nossas felicitações neste dia para todos aqueles que
-                      cuidam da nossa saúde [...]
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a href="#" class="btn btn-success d-block w-100 mb-3">
-              <i class="bi bi-newspaper me-2"></i> Ver todas as Notícias
+            <a href="#" 
+            class="btn btn-success d-block w-100 mb-3"
+            >
+              <font-awesome-icon :icon="['fas', 'newspaper']" /> Ver todas as Notícias
             </a>
           </div>
         </div>
@@ -406,10 +407,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-section-title {
+.section-title {
   text-align: center;
 }
-
 
 
 </style>
