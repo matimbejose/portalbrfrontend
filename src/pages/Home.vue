@@ -1,208 +1,210 @@
 <template>
-  <div class="main">
+  <div class="content">
     <HeaderComponent />
-    <div class="content">
-      <!-- ======= Imagem Principal ======= -->
-      <section id="hero" class="d-flex align-items-center">
-        <div class="container py-5">
-          <h1 class="text-center" style="margin-top: 30px">
-            Bem vindo ao portal da
-          </h1>
-          <h1 class="text-center" style="margin-bottom: 70px">
-            Prefeitura de Meruoca
-          </h1>
-          <center>
-            <div class="col-sm-6">
-              <div class="input-group">
-                <input
-                  class="form-control"
-                  type="search"
-                  placeholder="Posso Ajudar Você?"
-                  aria-label="Search"
-                  style="border-right: none"
-                />
-                <div class="input-group-append">
-                  <button
-                    type="button"
-                    class="btn btn-success btn-lg btn-block"
-                    style="padding: 15px; border-radius: 0px"
-                  >
-                    Pesquisar
-                  </button>
-                </div>
+
+    <!-- ======= Imagem Principal ======= -->
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container py-5">
+        <h1 class="text-center" style="margin-top: 30px">
+          Bem vindo ao portal da
+        </h1>
+        <h1 class="text-center" style="margin-bottom: 70px">
+          Prefeitura de Meruoca
+        </h1>
+        <center>
+          <div class="col-sm-6">
+            <div class="input-group">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Posso Ajudar Você?"
+                aria-label="Search"
+                style="border-right: none"
+              />
+              <div class="input-group-append">
+                <button
+                  type="button"
+                  class="btn btn-success btn-lg btn-block"
+                  style="padding: 15px; border-radius: 0px"
+                >
+                  Pesquisar
+                </button>
               </div>
             </div>
-          </center>
-          <!-- /Menu População -->
-          <div
-            id="search-course"
-            class="search-course-section mt-5 rounded-top rounded-3"
-            style="background-color: #00a859"
-          >
-            <div class="container">
-              <div class="search-counter-up">
-                <div class="row">
-                  <!-- /counter -->
-                  <div class="col-sm-3 mb">
-                    <div class="counter-number">
-                      <div class="col-sm">
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <font-awesome-icon
-                            icon="fa-solid fa-users"
-                            style="font-size: 40px"
-                            class="order-1"
-                          />
-                          <p class="order-2 mb-0">13.000+</p>
-                        </div>
+          </div>
+        </center>
+        <!-- /Menu População -->
+        <div
+          id="search-course"
+          class="search-course-section mt-5 rounded-top rounded-3"
+          style="background-color: #00a859"
+        >
+          <div class="container">
+            <div class="search-counter-up">
+              <div class="row">
+                <!-- /counter -->
+                <div class="col-sm-3 mb">
+                  <div class="counter-number">
+                    <div class="col-sm">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <font-awesome-icon
+                          icon="fa-solid fa-users"
+                          style="font-size: 40px"
+                          class="order-1"
+                        />
+                        <p class="order-2 mb-0">13.000+</p>
                       </div>
-                      <div class="border border-white border-2 h-80"></div>
-                      <p style="font-size: 15px !important">População</p>
                     </div>
+                    <div class="border border-white border-2 h-80"></div>
+                    <p style="font-size: 15px !important">População</p>
                   </div>
-                  <!-- /counter -->
+                </div>
+                <!-- /counter -->
 
-                  <!-- /counter -->
-                  <div class="col-sm-2 mb">
-                    <div class="counter-number">
-                      <div class="col-sm">
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <font-awesome-icon
-                            icon="fa-solid fa-house"
-                            style="font-size: 40px"
-                            class="order-1"
-                          />
-                          <p class="order-2 mb-0 ms-3">3</p>
-                        </div>
+                <!-- /counter -->
+                <div class="col-sm-2 mb">
+                  <div class="counter-number">
+                    <div class="col-sm">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <font-awesome-icon
+                          icon="fa-solid fa-house"
+                          style="font-size: 40px"
+                          class="order-1"
+                        />
+                        <p class="order-2 mb-0 ms-3">3</p>
                       </div>
-                      <div class="border border-white border-2 h-80"></div>
-                      <p style="font-size: 15px !important">Distritos</p>
                     </div>
+                    <div class="border border-white border-2 h-80"></div>
+                    <p style="font-size: 15px !important">Distritos</p>
                   </div>
+                </div>
 
-                  <!-- /counter -->
+                <!-- /counter -->
 
-                  <div class="col-sm-2 mb">
-                    <div class="counter-number">
-                      <div class="col-sm">
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <font-awesome-icon
-                            icon="fa-solid fa-users"
-                            style="font-size: 40px"
-                            class="order-1"
-                          />
-                          <p class="order-2 mb-0 ms-3">11</p>
-                        </div>
+                <div class="col-sm-2 mb">
+                  <div class="counter-number">
+                    <div class="col-sm">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <font-awesome-icon
+                          icon="fa-solid fa-users"
+                          style="font-size: 40px"
+                          class="order-1"
+                        />
+                        <p class="order-2 mb-0 ms-3">11</p>
                       </div>
-                      <div class="border border-white border-2 h-80"></div>
-                      <p style="font-size: 15px !important">Bairros</p>
                     </div>
+                    <div class="border border-white border-2 h-80"></div>
+                    <p style="font-size: 15px !important">Bairros</p>
                   </div>
+                </div>
 
-                  <div class="col-sm-2 mb">
-                    <div class="counter-number">
-                      <div class="col-sm">
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <font-awesome-icon
-                            icon="fa-solid fa-house"
-                            style="font-size: 40px"
-                            class="order-1"
-                          />
-                          <p class="order-2 mb-0 ms-3">137anos</p>
-                        </div>
+                <div class="col-sm-2 mb">
+                  <div class="counter-number">
+                    <div class="col-sm">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <font-awesome-icon
+                          icon="fa-solid fa-house"
+                          style="font-size: 40px"
+                          class="order-1"
+                        />
+                        <p class="order-2 mb-0 ms-3">137anos</p>
                       </div>
-                      <div class="border border-white border-2 h-80"></div>
-                      <p style="font-size: 15px !important">13 de Novembro</p>
                     </div>
+                    <div class="border border-white border-2 h-80"></div>
+                    <p style="font-size: 15px !important">13 de Novembro</p>
                   </div>
+                </div>
 
-                  <div class="col-sm-3 mb">
-                    <div class="counter-number">
-                      <div class="col-sm">
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <font-awesome-icon
-                            icon="fa-solid fa-map-location-dot"
-                            style="font-size: 40px"
-                            class="order-1"
-                          />
-                          <p class="order-2 mb-0 ms-3">283.538,00</p>
-                        </div>
+                <div class="col-sm-3 mb">
+                  <div class="counter-number">
+                    <div class="col-sm">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <font-awesome-icon
+                          icon="fa-solid fa-map-location-dot"
+                          style="font-size: 40px"
+                          class="order-1"
+                        />
+                        <p class="order-2 mb-0 ms-3">283.538,00</p>
                       </div>
-                      <div class="border border-white border-2 h-80"></div>
-                      <p style="font-size: 15px !important">Área</p>
                     </div>
+                    <div class="border border-white border-2 h-80"></div>
+                    <p style="font-size: 15px !important">Área</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!--End /Menu População -->
         </div>
-      </section>
-      <!-- End Imagem Principal -->
+        <!--End /Menu População -->
+      </div>
+    </section>
+    <!-- End Imagem Principal -->
 
-      <!-- ======= MENUS ======= -->
-      <section id="menu" class="featured-services py-5">
-        <div class="container">
-          <div class="row gx-5 justify-content-center">
-            <div class="col-sm-6 col-lg-3">
-              <div class="icon-box text-center">
-                <font-awesome-icon
-                  :icon="['fas', 'circle-exclamation']"
-                  style="font-size: 50px"
-                />
-                <h3><a class="title" href="#">Portal da Transparência</a></h3>
-              </div>
+    <!-- ======= MENUS ======= -->
+    <section id="menu" class="featured-services py-5">
+      <div class="container">
+        <div class="row gx-5 justify-content-center">
+          <div class="col-sm-6 col-lg-3">
+            <div class="icon-box text-center">
+              <font-awesome-icon
+                :icon="['fas', 'circle-exclamation']"
+                style="font-size: 50px"
+              />
+              <h3><a class="title" href="#">Portal da Transparência</a></h3>
             </div>
-            <div class="col-sm-6 col-lg-3">
-              <div class="icon-box text-center">
-                <font-awesome-icon
-                  icon="fa-solid fa-money-bill"
-                  style="font-size: 50px"
-                />
-                <h3><a class="title" href="#">Gestão Fiscal LRF</a></h3>
-              </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="icon-box text-center">
+              <font-awesome-icon
+                icon="fa-solid fa-money-bill"
+                style="font-size: 50px"
+              />
+              <h3><a class="title" href="#">Gestão Fiscal LRF</a></h3>
             </div>
-            <div class="col-sm-6 col-lg-3">
-              <div class="icon-box text-center">
-                <font-awesome-icon
-                  icon="fa-regular fa-message"
-                  style="font-size: 50px"
-                />
-                <h3><a class="title" href="#">Ouvidoria Municipal</a></h3>
-              </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="icon-box text-center">
+              <font-awesome-icon
+                icon="fa-regular fa-message"
+                style="font-size: 50px"
+              />
+              <h3><a class="title" href="#">Ouvidoria Municipal</a></h3>
             </div>
-            <div class="col-sm-6 col-lg-3">
-              <div class="icon-box text-center">
-                <font-awesome-icon
-                  icon="fa-solid fa-exclamation"
-                  style="font-size: 50px"
-                />
-                <h3>
-                  <a href="#" class="title">Acesso a Informação</a>
-                </h3>
-              </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="icon-box text-center">
+              <font-awesome-icon
+                icon="fa-solid fa-exclamation"
+                style="font-size: 50px"
+              />
+              <h3>
+                <a href="#" class="title">Acesso a Informação</a>
+              </h3>
             </div>
           </div>
         </div>
-      </section>
-      <!-- /MENUS -->
+      </div>
+    </section>
+    <!-- /MENUS -->
 
-      <!-- Noticias -->
+    <!-- Noticias -->
+    <section id="noticias" class="about section-bg">
       <div class="container">
         <div class="section-title">
           <h2>NOTÍCIAS</h2>
           <h3>Fique <span>Informado!</span></h3>
         </div>
+
         <div class="row">
           <div class="col-lg-6">
             <div
@@ -274,7 +276,9 @@
                     />
                   </div>
                   <div class="col-md-8">
-                    <font-awesome-icon icon="fa-solid fa-calendar-days" />18/10/2022
+                    <font-awesome-icon
+                      icon="fa-solid fa-calendar-days"
+                    />18/10/2022
                     <h5 class="text-left">18 DE OUTUBRO - DIA DO MÉDICO!</h5>
 
                     <p style="display: inline-block; align: top">
@@ -296,7 +300,9 @@
                     />
                   </div>
                   <div class="col-md-8">
-                    <font-awesome-icon icon="fa-solid fa-calendar-days" />18/10/2022
+                    <font-awesome-icon
+                      icon="fa-solid fa-calendar-days"
+                    />18/10/2022
 
                     <h5 class="text-left">18 DE OUTUBRO - DIA DO MÉDICO!</h5>
 
@@ -319,7 +325,9 @@
                     />
                   </div>
                   <div class="col-md-8">
-                   <font-awesome-icon icon="fa-solid fa-calendar-days" />18/10/2022
+                    <font-awesome-icon
+                      icon="fa-solid fa-calendar-days"
+                    />18/10/2022
 
                     <h5 class="text-left">18 DE OUTUBRO - DIA DO MÉDICO!</h5>
 
@@ -331,16 +339,81 @@
                 </div>
               </div>
             </div>
-            <a href="#" 
-            class="btn btn-success d-block w-100 mb-3"
-            >
-              <font-awesome-icon :icon="['fas', 'newspaper']" /> Ver todas as Notícias
+            <a href="#" class="btn btn-success d-block w-100 mb-3">
+              <font-awesome-icon :icon="['fas', 'newspaper']" /> Ver todas as
+              Notícias
             </a>
           </div>
         </div>
-        <!--/ Noticias -->
       </div>
-    </div>
+    </section>
+    <!--/ Noticias -->
+
+    <!--- Videos ------>
+    <section>
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Videos</h2>
+          <h3>Vídeos relacionados a <span> gestão</span></h3>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <iframe
+              id="videoPrincipal"
+              src="https://www.youtube.com/embed/dXJEWO36Pp0"
+              style="border: none; overflow: hidden; border-radius: 10px"
+              scrolling="no"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              width="100%"
+              height="420"
+              frameborder="0"
+            ></iframe>
+          </div>
+
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-12">
+                <iframe
+                  id="video2"
+                  src="https://www.youtube.com/embed/dXJEWO36Pp0"
+                  style="border: none; overflow: hidden; border-radius: 10px"
+                  scrolling="no"
+                  allowfullscreen="true"
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  width="100%"
+                  height="207"
+                  frameborder="0"
+                ></iframe>
+              </div>
+
+              <div class="col-md-12">
+                <iframe
+                  id="video3"
+                  src="https://www.youtube.com/embed/dXJEWO36Pp0"
+                  style="border: none; overflow: hidden; border-radius: 10px"
+                  scrolling="no"
+                  allowfullscreen="true"
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  width="100%"
+                  height="207"
+                  frameborder="0"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <a href="#" class="btn btn-success d-block w-100 mb-3">
+             <font-awesome-icon :icon="['fas', 'video']" /> Ver todos os
+              Videos
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--- end videos---->
+
+
     <FooterComponent />
   </div>
 </template>
@@ -361,13 +434,6 @@ export default {
 
 
 <style>
-.content {
-  min-height: 100vh;
-  margin: -60px 0 -40px;
-  padding: 60px 0 40px;
-  box-sizing: border-box;
-}
-
 .section-title h2 {
   font-size: 13px;
   letter-spacing: 1px;
@@ -389,15 +455,22 @@ export default {
   border-radius: 50px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Roboto", sans-serif;
 }
 
 .section-title h3 span {
-  color: #DA4849;
+  color: #da4849;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
@@ -406,10 +479,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-
 .section-title {
   text-align: center;
 }
 
+.section-bg {
+  background-color: #f6f9fe;
+}
 
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
 </style>

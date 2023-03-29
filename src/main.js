@@ -21,13 +21,15 @@ import {
     faMoneyBill,
     faExclamation,
     faCalendarDays,
-    faNewspaper
+    faNewspaper,
+    faVideo
     
 } from '@fortawesome/free-solid-svg-icons'
 
 
 import {
     faMessage,
+    
 } from '@fortawesome/free-regular-svg-icons'
 
 
@@ -35,7 +37,7 @@ import {
 
 
 /* add icons to the library */
-library.add(faUserSecret, faLocationDot, faEnvelope, faPhone, faCheck, faUsers, faHouse, faMapLocationDot, faCircleExclamation, faMoneyBill, faMessage, faExclamation, faCalendarDays,faNewspaper)
+library.add(faUserSecret, faLocationDot, faEnvelope, faPhone, faCheck, faUsers, faHouse, faMapLocationDot, faCircleExclamation, faMoneyBill, faMessage, faExclamation, faCalendarDays,faNewspaper,faVideo)
 
 
 import "bootstrap/dist/css/bootstrap.min.css";

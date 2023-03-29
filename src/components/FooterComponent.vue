@@ -1,8 +1,8 @@
 <template>
   <div class="main">
     <!-- ======= Contato ======= -->
-    <section id="contato" class="py-5">
-      <div class="container" data-aos="fade-up">
+    <section id="contato">
+      <div class="container">
         <div class="row">
           <div class="col-md-6">
             <div class="contact-left-content">
@@ -107,6 +107,8 @@
       </footer>
       <!-- End Footer -->
     </section>
+
+
   </div>
 </template>
 
