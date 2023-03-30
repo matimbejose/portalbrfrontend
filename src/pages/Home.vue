@@ -404,15 +404,619 @@
           </div>
           <div class="col-md-12">
             <a href="#" class="btn btn-success d-block w-100 mb-3">
-             <font-awesome-icon :icon="['fas', 'video']" /> Ver todos os
-              Videos
+              <font-awesome-icon :icon="['fas', 'video']" /> Ver todos os Videos
             </a>
           </div>
         </div>
       </div>
     </section>
-<!--- end videos---->
+    <!--- end videos---->
 
+    <!----Publicacao LRF----->
+    <section class="container aos-init aos-animate" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Publicações</h2>
+        <h3>Informações dos últimos <span> LRF</span></h3>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card" style="padding: 8px 0 10px 0">
+            <ul class="nav nav-tabs" role="tablist" style="padding-left: 10px">
+              <li
+                class="active button hvr-sweep-to-right rounded float-start"
+                style="padding: 10px 15px; font-size: 14px"
+                rel="#lrfs"
+              >
+                <font-awesome-icon icon="fa-solid fa-file-circle-plus" /> LRF
+              </li>
+              <li
+                class="button hvr-sweep-to-right rounded float-start"
+                style="padding: 10px 15px; font-size: 14px"
+                rel="#rreo"
+              >
+               <font-awesome-icon icon="fa-solid fa-file-circle-plus" />  RREO
+              </li>
+              <li
+                class="button hvr-sweep-to-right rounded float-start"
+                style="padding: 10px 15px; font-size: 14px"
+                rel="#rgf"
+              >
+               <font-awesome-icon icon="fa-solid fa-file-circle-plus" />  RGF
+              </li>
+              <li
+                class="button hvr-sweep-to-right rounded float-start"
+                style="padding: 10px 15px; font-size: 14px"
+                rel="#prgfin"
+              >
+               <font-awesome-icon icon="fa-solid fa-file-circle-plus" />  PRGFIN
+              </li>
+              <li
+                class="button hvr-sweep-to-right rounded float-start"
+                style="padding: 10px 15px; font-size: 14px"
+                rel="#ppa"
+              >
+               <font-awesome-icon icon="fa-solid fa-file-circle-plus" />  PPA
+              </li>
+              <li
+                class="button hvr-sweep-to-right rounded float-start"
+                style="padding: 10px 15px; font-size: 14px"
+                rel="#loa"
+              >
+               <font-awesome-icon icon="fa-solid fa-file-circle-plus" />  LOA
+              </li>
+              <li
+                class="button hvr-sweep-to-right rounded float-start"
+                style="padding: 10px 15px; font-size: 14px"
+                rel="#ldo"
+              >
+               <font-awesome-icon icon="fa-solid fa-file-circle-plus" />  LDO
+              </li>
+            </ul>
+            <div id="tab-flex-column" class="tab-content tab-space">
+              <div
+                class="tab-pane active"
+                id="lrfs"
+                style="width: 100%; padding-right: 15px; padding-left: 15px"
+              >
+                <div
+                  class="list-group"
+                  style="margin-bottom: 5px; margin-top: 5px"
+                >
+                  <a href="#" class="list-group-item">
+                    <div class="row">
+                      <div class="col-md-8" style="line-height: 1.5">
+                        <strong style="padding-right: 5px; font-size: 14px">
+                          RREO - RELATÓRIO RESUMIDO DA EXECUÇÃO ORÇAMENTÁRIA
+                        </strong>
+                      </div>
+                      <div
+                        class="col-md-4"
+                        style="padding-left: 15px; font-size: 14px"
+                      >
+                        <i class="bi bi-calendar-check-fill"></i> 4º
+                        BIMESTRE/2022
+                        <span
+                          class="lrfDataExercicio"
+                          style="float: right; font-size: 14px"
+                        >
+                          <i
+                            style="padding-left: 10px"
+                            class="bi bi-calendar3"
+                          ></i>
+                          30/09/2022
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="list-group"
+                  style="margin-bottom: 5px; margin-top: 5px"
+                >
+                  <a href="#" class="list-group-item">
+                    <div class="row">
+                      <div class="col-md-8" style="line-height: 1.5">
+                        <strong style="padding-right: 5px; font-size: 14px">
+                          RGF - RELATÓRIO DE GESTÃO FISCAL</strong
+                        >
+                      </div>
+                      <div
+                        class="col-md-4"
+                        style="padding-left: 15px; font-size: 14px"
+                      >
+                        <i class="bi bi-calendar-check-fill"></i> 2°
+                        QUADRIMESTRE/2022
+                        <span
+                          class="lrfDataExercicio"
+                          style="float: right; font-size: 14px"
+                        >
+                          <i
+                            style="padding-left: 10px"
+                            class="bi bi-calendar3"
+                          ></i>
+                          30/09/2022
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="list-group"
+                  style="margin-bottom: 5px; margin-top: 5px"
+                >
+                  <a href="#" class="list-group-item">
+                    <div class="row">
+                      <div class="col-md-8" style="line-height: 1.5">
+                        <strong style="padding-right: 5px; font-size: 14px">
+                          RREO - RELATÓRIO RESUMIDO DA EXECUÇÃO
+                          ORÇAMENTÁRIA</strong
+                        >
+                      </div>
+                      <div
+                        class="col-md-4"
+                        style="padding-left: 15px; font-size: 14px"
+                      >
+                        <i class="bi bi-calendar-check-fill"></i> 3º
+                        BIMESTRE/2022
+                        <span class="lrfDataExercicio" style="float: right">
+                          <i
+                            style="padding-left: 10px"
+                            class="bi bi-calendar3"
+                          ></i>
+                          27/07/2022
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="list-group"
+                  style="margin-bottom: 5px; margin-top: 5px"
+                >
+                  <a href="#" class="list-group-item">
+                    <div class="row">
+                      <div
+                        class="col-md-8"
+                        style="line-height: 1.5; font-size: 14px"
+                      >
+                        <strong style="padding-right: 5px">
+                          LDO - LEI DE DIRETRIZES ORÇAMENTÁRIA</strong
+                        >
+                      </div>
+                      <div
+                        class="col-md-4"
+                        style="padding-left: 15px; font-size: 14px"
+                      >
+                        <i class="bi bi-calendar-check-fill"></i> ANUAL/2023
+                        <span class="lrfDataExercicio" style="float: right">
+                          <i
+                            style="padding-left: 10px"
+                            class="bi bi-calendar3"
+                          ></i>
+                          15/06/2022
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="list-group"
+                  style="margin-bottom: 5px; margin-top: 5px"
+                >
+                  <a href="#" class="list-group-item">
+                    <div class="row">
+                      <div
+                        class="col-md-8"
+                        style="line-height: 1.5; font-size: 14px"
+                      >
+                        <strong style="padding-right: 5px">
+                          RREO - RELATÓRIO RESUMIDO DA EXECUÇÃO
+                          ORÇAMENTÁRIA</strong
+                        >
+                      </div>
+                      <div
+                        class="col-md-4"
+                        style="padding-left: 15px; font-size: 14px"
+                      >
+                        <i class="bi bi-calendar-check-fill"></i> 2º
+                        BIMESTRE/2022
+                        <span class="lrfDataExercicio" style="float: right">
+                          <i
+                            style="padding-left: 10px"
+                            class="bi bi-calendar3"
+                          ></i>
+                          25/05/2022
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="list-group"
+                  style="margin-bottom: 5px; margin-top: 5px"
+                >
+                  <a href="#" class="list-group-item">
+                    <div class="row">
+                      <div
+                        class="col-md-8"
+                        style="line-height: 1.5; font-size: 14px"
+                      >
+                        <strong style="padding-right: 5px">
+                          RGF - RELATÓRIO DE GESTÃO FISCAL</strong
+                        >
+                      </div>
+                      <div
+                        class="col-md-4"
+                        style="padding-left: 15px; font-size: 14px"
+                      >
+                        <i class="bi bi-calendar-check-fill"></i> 1°
+                        QUADRIMESTRE/2022
+                        <span class="lrfDataExercicio" style="float: right">
+                          <i
+                            style="padding-left: 10px"
+                            class="bi bi-calendar3"
+                          ></i>
+                          25/05/2022
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <a href="#" class="btn btn-success d-block w-100 mb-3">
+                  <font-awesome-icon icon="fa-solid fa-file-circle-plus" /> Ver
+                  todos os Videos
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----End Publicao LRF----->
+
+    <!--- Publicao como tal----->
+
+        <section class="container aos-init aos-animate" data-aos="fade-up">
+            <div class="section-title">
+                <h2>PUBLICAÇÕES</h2>
+                <h3>Informações das <span>últimas publicações</span></h3>
+
+            </div>
+
+            <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-6">
+                    <div class="card" style="padding: 8px 0 10px 0;">
+                        <ul class="nav nav-tabs" role="tablist" style=" padding-left: 10px;">
+                            <li class="active button hvr-sweep-to-right rounded float-start" style="padding:10px 15px; font-size: 14px;" rel="#lrfs"> <i class="bi bi-file-earmark-plus-fill"></i> PORTARIAS</li>
+                            <li class="button hvr-sweep-to-right rounded float-start" style="padding:10px 15px; font-size: 14px;" rel="#rreo"> <i class="bi bi-file-earmark-plus-fill"></i> DIÁRIAS</li>
+
+
+
+                        </ul>
+                        <div id="tab-flex-column" class="tab-content tab-space">
+                            <div class="tab-pane active" style="width: 100%; padding-right: 15px; padding-left: 15px;">
+                                <div class="list-group" style="margin-bottom: 5px; margin-top: 5px;">
+                                    <a href="#" class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-md-12" style="line-height: 1.500;">
+                                                <strong style="padding-right: 5px; padding-left: 5px; font-size: 14px;"> EXONERAÇÃO: 03.10.01/2022 </strong> <button type="button" class="btn btn-danger" style="padding:2px 15px; font-size: 10px; margin-top:-5px;">NOVO</button>
+                                                <p style="padding-right: 5px; padding-left: 5px; font-size: 13px;">Exoneração, Agente: Barbara Xavier de Andrade, Cargo: Coordenação de Proteção Social e Especial, Secretaria: Secretaria de Infraestrutura e Urbanismo</p>
+
+                                            </div>
+                                            <div class="col-md-12" style=" font-size: 14px; margin-top:-10px;">
+                                                <span>
+                                                    <i style="padding-left: 5px;" class="bi bi-calendar3"></i> 30/09/2022
+
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+
+                                <div class="list-group" style="margin-bottom: 5px; margin-top: 5px;">
+                                    <a href="#" class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-md-12" style="line-height: 1.500;">
+                                                <strong style="padding-right: 5px; padding-left: 5px; font-size: 14px;"> EXONERAÇÃO: 03.10.01/2022 </strong>
+                                                <p style="padding-right: 5px; padding-left: 5px; font-size: 13px;">Exoneração, Agente: Barbara Xavier de Andrade, Cargo: Coordenação de Proteção Social e Especial, Secretaria: Secretaria de Infraestrutura e Urbanismo</p>
+
+                                            </div>
+                                            <div class="col-md-12" style=" font-size: 14px; margin-top:-10px;">
+                                                <span>
+                                                    <i style="padding-left: 5px;" class="bi bi-calendar3"></i> 30/09/2022
+
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+
+                                <div class="list-group" style="margin-bottom: 5px; margin-top: 5px;">
+                                    <a href="#" class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-md-12" style="line-height: 1.500;">
+                                                <strong style="padding-right: 5px; padding-left: 5px; font-size: 14px;"> EXONERAÇÃO: 03.10.01/2022 </strong>
+                                                <p style="padding-right: 5px; padding-left: 5px; font-size: 13px;">Exoneração, Agente: Barbara Xavier de Andrade, Cargo: Coordenação de Proteção Social e Especial, Secretaria: Secretaria de Infraestrutura e Urbanismo</p>
+
+                                            </div>
+                                            <div class="col-md-12" style=" font-size: 14px; margin-top:-10px;">
+                                                <span>
+                                                    <i style="padding-left: 5px;" class="bi bi-calendar3"></i> 30/09/2022
+
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <a href="#" class="button hvr-sweep-to-right rounded float-start text-center" style="padding:10px 0px; font-size: 14px; width:98%;"><i class="bi bi-file-earmark-plus-fill"></i> Ver todas as Portarias</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card" style="padding: 8px 0 10px 0;">
+                        <ul class="nav nav-tabs" role="tablist" style=" padding-left: 10px;">
+
+                            <li class="button hvr-sweep-to-right rounded float-start" style="padding:10px 15px; font-size: 14px;" rel="#prgfin"> <i class="bi bi-file-earmark-plus-fill"></i> DECRETOS</li>
+                            <li class="button hvr-sweep-to-right rounded float-start" style="padding:10px 15px; font-size: 14px;" rel="#ppa"> <i class="bi bi-file-earmark-plus-fill"></i> OUTRAS PUBLICAÇÕES</li>
+
+                        </ul>
+                        <div id="tab-flex-column" class="tab-content tab-space">
+                            <div class="tab-pane active" style="width: 100%; padding-right: 15px; padding-left: 15px;">
+                                <div class="list-group" style="margin-bottom: 5px; margin-top: 5px;">
+                                    <a href="#" class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-md-12" style="line-height: 1.500;">
+                                                <strong style="padding-right: 5px; padding-left: 5px; font-size: 14px;"> EXONERAÇÃO: 03.10.01/2022 </strong> <button type="button" class="btn btn-danger" style="padding:2px 15px; font-size: 10px; margin-top:-5px;">NOVO</button>
+                                                <p style="padding-right: 5px; padding-left: 5px; font-size: 13px;">Exoneração, Agente: Barbara Xavier de Andrade, Cargo: Coordenação de Proteção Social e Especial, Secretaria: Secretaria de Infraestrutura e Urbanismo</p>
+
+                                            </div>
+                                            <div class="col-md-12" style=" font-size: 14px; margin-top:-10px;">
+                                                <span>
+                                                    <i style="padding-left: 5px;" class="bi bi-calendar3"></i> 30/09/2022
+
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+
+                                <div class="list-group" style="margin-bottom: 5px; margin-top: 5px;">
+                                    <a href="#" class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-md-12" style="line-height: 1.500;">
+                                                <strong style="padding-right: 5px; padding-left: 5px; font-size: 14px;"> EXONERAÇÃO: 03.10.01/2022 </strong>
+                                                <p style="padding-right: 5px; padding-left: 5px; font-size: 13px;">Exoneração, Agente: Barbara Xavier de Andrade, Cargo: Coordenação de Proteção Social e Especial, Secretaria: Secretaria de Infraestrutura e Urbanismo</p>
+
+                                            </div>
+                                            <div class="col-md-12" style=" font-size: 14px; margin-top:-10px;">
+                                                <span>
+                                                    <i style="padding-left: 5px;" class="bi bi-calendar3"></i> 30/09/2022
+
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+
+                                <div class="list-group" style="margin-bottom: 5px; margin-top: 5px;">
+                                    <a href="#" class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-md-12" style="line-height: 1.500;">
+                                                <strong style="padding-right: 5px; padding-left: 5px; font-size: 14px;"> EXONERAÇÃO: 03.10.01/2022 </strong>
+                                                <p style="padding-right: 5px; padding-left: 5px; font-size: 13px;">Exoneração, Agente: Barbara Xavier de Andrade, Cargo: Coordenação de Proteção Social e Especial, Secretaria: Secretaria de Infraestrutura e Urbanismo</p>
+
+                                            </div>
+                                            <div class="col-md-12" style=" font-size: 14px; margin-top:-10px;">
+                                                <span>
+                                                    <i style="padding-left: 5px;" class="bi bi-calendar3"></i> 30/09/2022
+
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <a href="#" class="button hvr-sweep-to-right rounded float-start text-center" style="padding:10px 0px; font-size: 14px; width:98%;"><i class="bi bi-file-earmark-plus-fill"></i> Ver todos os Decretos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!---End Plublicao ---->
+
+
+
+    <!--- Plublicao de Licitacao--->
+
+        <section class="container aos-init aos-animate" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>PUBLICAÇÕES</h2>
+                <h3>Informações das <span>últimas licitações e contratos</span></h3>
+
+            </div>
+
+            <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-6" id="licitacoes">
+                    <div class="card" style="padding: 8px 0 10px 0;">
+                        <ul class="nav nav-tabs" role="tablist" style=" padding-left: 10px;">
+                            <li class="active button hvr-sweep-to-right rounded float-start" style="padding:10px 15px; font-size: 14px;" rel="#lrfs"> <i class="bi bi-file-earmark-plus-fill"></i> LICITAÇÕES</li>
+
+                        </ul>
+                        <div id="tab-flex-column" class="tab-content tab-space">
+                            <div class="tab-pane active" style="width: 100%; padding-right: 15px; padding-left: 15px;">
+                                <div class="list-group" style="margin-bottom: 5px; margin-top: 5px;">
+                                    <a href="#" class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-md-12" style="line-height: 1.500;">
+                                                <strong style="padding-right: 5px; padding-left: 5px; font-size: 14px;"> INEXIGIBILIDADE: 0310.001/2022/2022 - MENOR PREÇO </strong> <button type="button" class="btn btn-danger" style="padding:2px 15px; font-size: 10px; margin-top:-5px;">NOVO</button>
+                                                <p style="padding-right: 5px; padding-left: 5px; font-size: 13px;">CONTRATAÇÃO ARTISTICA CULTURAL DA BANDA NODA DE CAJÚ, PARA APRESENTAÇÃO NO DIA 12 DE NOVEMBRO DE 2022, NA FESTA DE ANIVERSÁRIO DE 137 ANOS DO MUNICIPIO DE MERUOCA-CE.</p>
+
+                                            </div>
+                                            <div class="col-md-12" style=" font-size: 14px; margin-top:-10px;">
+                                                <span>
+                                                    <i style="padding-left: 5px;" class="bi bi-calendar3"></i> Publicação: 03/10/2022
+
+
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+
+                                <div class="list-group" style="margin-bottom: 5px; margin-top: 5px;">
+                                    <a href="#" class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-md-12" style="line-height: 1.500;">
+                                                <strong style="padding-right: 5px; padding-left: 5px; font-size: 14px;">DISPENSA: 0310.001/2022/2022 - MENOR PREÇO </strong>
+                                                <p style="padding-right: 5px; padding-left: 5px; font-size: 13px;">LOCAÇÃO DE UM VENTILADOR MECÂNICO BIBAP (CONTÍNUO) E UM MONITOR DE PARÃMETROS COM OXÍMETRO DE PULSO, JUNTO A SECRETARIA DE SAÚDE DO MUNICÍPIO DE MERUOCA-CE.</p>
+
+                                            </div>
+                                            <div class="col-md-12" style=" font-size: 14px; margin-top:-10px;">
+                                                <span>
+                                                    <i style="padding-left: 5px;" class="bi bi-calendar3"></i> Publicação: 03/10/2022
+
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+
+                                <div class="list-group" style="margin-bottom: 5px; margin-top: 5px;">
+                                    <a href="#" class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-md-12" style="line-height: 1.500;">
+                                                <strong style="padding-right: 5px; padding-left: 5px; font-size: 14px;"> DISPENSA: 3009.001/2022/2022 - MENOR PREÇO </strong>
+                                                <p style="padding-right: 5px; padding-left: 5px; font-size: 13px;">PRESTAÇÃO DE SEVIÇO NO FORNECIMENTO DE ESPAÇO PARA REALIZAÇÃO DAS ATIVIDADES SOCIOEDUCARTIVAS DO SERVIÇO DE CONVIVÊNCIA E FORTALECIMENO DE VÍNCULOS, TODAS AS QUARTAS-FEIRAS, FICANDO EXCLUSIVO PARA SECRETARIA DE INCLUSÃO E PROMOÇÃO SOCIAL DO MUNICÍ [...]</p>
+
+                                            </div>
+                                            <div class="col-md-12" style=" font-size: 14px; margin-top:-10px;">
+                                                <span>
+                                                    <i style="padding-left: 5px;" class="bi bi-calendar3"></i> Publicação: 30/09/2022
+
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-12">
+                            <a href="#" class="button hvr-sweep-to-right rounded float-start text-center" style="padding:10px 0px; font-size: 14px; width:98%;"><i class="bi bi-file-earmark-plus-fill"></i> Ver todas as Licitações</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" id="contratos">
+                    <div class="card" style="padding: 8px 0 10px 0;">
+                        <ul class="nav nav-tabs" role="tablist" style=" padding-left: 10px;">
+                            <li class="button hvr-sweep-to-right rounded float-start" style="padding:10px 15px; font-size: 14px;" rel="#rreo"> <i class="bi bi-file-earmark-plus-fill"></i> CONTRATOS</li>
+                        </ul>
+                        <div id="tab-flex-column" class="tab-content tab-space">
+                            <div class="tab-pane active" style="width: 100%; padding-right: 15px; padding-left: 15px;">
+                                <div class="list-group" style="margin-bottom: 5px; margin-top: 5px;">
+                                    <a href="#" class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-md-12" style="line-height: 1.500;">
+                                                <strong style="padding-right: 5px; padding-left: 5px; font-size: 14px;"> INEXIGIBILIDADE: 0310.001/2022/2022 - MENOR PREÇO </strong> <button type="button" class="btn btn-danger" style="padding:2px 15px; font-size: 10px; margin-top:-5px;">NOVO</button>
+                                                <p style="padding-right: 5px; padding-left: 5px; font-size: 13px;">CONTRATAÇÃO ARTISTICA CULTURAL DA BANDA NODA DE CAJÚ, PARA APRESENTAÇÃO NO DIA 12 DE NOVEMBRO DE 2022, NA FESTA DE ANIVERSÁRIO DE 137 ANOS DO MUNICIPIO DE MERUOCA-CE.</p>
+
+                                            </div>
+                                            <div class="col-md-12" style=" font-size: 14px; margin-top:-10px;">
+                                                <span>
+                                                    <i style="padding-left: 5px;" class="bi bi-calendar3"></i> Publicação: 03/10/2022
+
+
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+
+                                <div class="list-group" style="margin-bottom: 5px; margin-top: 5px;">
+                                    <a href="#" class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-md-12" style="line-height: 1.500;">
+                                                <strong style="padding-right: 5px; padding-left: 5px; font-size: 14px;">DISPENSA: 0310.001/2022/2022 - MENOR PREÇO </strong>
+                                                <p style="padding-right: 5px; padding-left: 5px; font-size: 13px;">LOCAÇÃO DE UM VENTILADOR MECÂNICO BIBAP (CONTÍNUO) E UM MONITOR DE PARÃMETROS COM OXÍMETRO DE PULSO, JUNTO A SECRETARIA DE SAÚDE DO MUNICÍPIO DE MERUOCA-CE.</p>
+
+                                            </div>
+                                            <div class="col-md-12" style=" font-size: 14px; margin-top:-10px;">
+                                                <span>
+                                                    <i style="padding-left: 5px;" class="bi bi-calendar3"></i> Publicação: 03/10/2022
+
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+
+                                <div class="list-group" style="margin-bottom: 5px; margin-top: 5px;">
+                                    <a href="#" class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-md-12" style="line-height: 1.500;">
+                                                <strong style="padding-right: 5px; padding-left: 5px; font-size: 14px;"> DISPENSA: 3009.001/2022/2022 - MENOR PREÇO </strong>
+                                                <p style="padding-right: 5px; padding-left: 5px; font-size: 13px;">PRESTAÇÃO DE SEVIÇO NO FORNECIMENTO DE ESPAÇO PARA REALIZAÇÃO DAS ATIVIDADES SOCIOEDUCARTIVAS DO SERVIÇO DE CONVIVÊNCIA E FORTALECIMENO DE VÍNCULOS, TODAS AS QUARTAS-FEIRAS, FICANDO EXCLUSIVO PARA SECRETARIA DE INCLUSÃO E PROMOÇÃO SOCIAL DO MUNICÍ [...]</p>
+
+                                            </div>
+                                            <div class="col-md-12" style=" font-size: 14px; margin-top:-10px;">
+                                                <span>
+                                                    <i style="padding-left: 5px;" class="bi bi-calendar3"></i> Publicação: 30/09/2022
+
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+
+
+
+                            </div>
+                            <div class="col-md-12">
+                                <a href="#" class="button hvr-sweep-to-right rounded float-start text-center" style="padding:10px 0px; font-size: 14px; width:98%;"><i class="bi bi-file-earmark-plus-fill"></i> Ver todos os Contratos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!---- End Publicao de licitações  ---->
 
     <FooterComponent />
   </div>
@@ -434,6 +1038,10 @@ export default {
 
 
 <style>
+:root {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
 .section-title h2 {
   font-size: 13px;
   letter-spacing: 1px;
