@@ -7,7 +7,7 @@
     >
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="../assets/logo.png" alt="logo" height="36" />
+          <img src="../assets/logo.png" alt="logo"   height="60" />
         </a>
         <button
           class="navbar-toggler"

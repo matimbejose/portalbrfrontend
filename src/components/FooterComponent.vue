@@ -90,7 +90,7 @@
 
     <!-- End Contato -->
 
-    <section>
+    <div>
       <footer id="footer">
         <div class="container py-4">
           <div class="copyright">
@@ -106,7 +106,7 @@
         </div>
       </footer>
       <!-- End Footer -->
-    </section>
+    </div>
 
 
   </div>
