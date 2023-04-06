@@ -26,7 +26,7 @@ import {
     faSpinner,
     faFileCirclePlus,
     faCalendarDay,
-    faCalendarCheck
+    faCalendarCheck,
 } from '@fortawesome/free-solid-svg-icons'
 
 

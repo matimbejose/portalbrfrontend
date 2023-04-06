@@ -33,122 +33,114 @@
             </div>
           </div>
         </center>
-        <!-- /Menu População -->
-        <div
-          id="search-course"
-          class="search-course-section mt-5 rounded-top rounded-3"
-          style="background-color: #00a859"
-        >
-          <div class="container">
-            <div class="search-counter-up">
-              <div class="row">
-                <!-- /counter -->
-                <div class="col-sm-3 mb">
-                  <div class="counter-number">
-                    <div class="col-sm">
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <font-awesome-icon
-                          icon="fa-solid fa-users"
-                          style="font-size: 40px"
-                          class="order-1"
-                        />
-                        <p class="order-2 mb-0">13.000+</p>
-                      </div>
-                    </div>
-                    <div class="border border-white border-2 h-80"></div>
-                    <p style="font-size: 15px !important">População</p>
-                  </div>
+      </div>
+    </section>
+    <!-- End Imagem Principal -->
+
+    <!-- /Menu População -->
+    <section
+      id="search-course"
+      class="search-course-section search-course-secound"
+      style="background-color: #00a859 !important"
+    >
+      <div class="container">
+        <div class="search-counter-up">
+          <div class="row">
+            <div class="col-sm">
+              <div class="counter-icon-number">
+                <div class="counter-icon">
+                  <font-awesome-icon
+                    icon="fa-solid fa-users"
+                    class="StleyIcomMenu"
+                  />
                 </div>
-                <!-- /counter -->
-
-                <!-- /counter -->
-                <div class="col-sm-2 mb">
-                  <div class="counter-number">
-                    <div class="col-sm">
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <font-awesome-icon
-                          icon="fa-solid fa-house"
-                          style="font-size: 40px"
-                          class="order-1"
-                        />
-                        <p class="order-2 mb-0 ms-3">3</p>
-                      </div>
-                    </div>
-                    <div class="border border-white border-2 h-80"></div>
-                    <p style="font-size: 15px !important">Distritos</p>
-                  </div>
+                <div class="counter-number">
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="13"
+                    data-purecounter-duration="0"
+                    class="purecounter"
+                    >13</span
+                  ><span>.000+</span>
+                  <p>População</p>
                 </div>
+              </div>
+            </div>
+            <!-- /counter -->
 
-                <!-- /counter -->
-
-                <div class="col-sm-2 mb">
-                  <div class="counter-number">
-                    <div class="col-sm">
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <font-awesome-icon
-                          icon="fa-solid fa-users"
-                          style="font-size: 40px"
-                          class="order-1"
-                        />
-                        <p class="order-2 mb-0 ms-3">11</p>
-                      </div>
-                    </div>
-                    <div class="border border-white border-2 h-80"></div>
-                    <p style="font-size: 15px !important">Bairros</p>
-                  </div>
+            <div class="col-sm-2">
+              <div class="counter-icon-number">
+                <div class="counter-icon">
+                  <font-awesome-icon
+                    icon="fa-solid fa-house"
+                    class="StleyIcomMenu"
+                  />
                 </div>
-
-                <div class="col-sm-2 mb">
-                  <div class="counter-number">
-                    <div class="col-sm">
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <font-awesome-icon
-                          icon="fa-solid fa-house"
-                          style="font-size: 40px"
-                          class="order-1"
-                        />
-                        <p class="order-2 mb-0 ms-3">137anos</p>
-                      </div>
-                    </div>
-                    <div class="border border-white border-2 h-80"></div>
-                    <p style="font-size: 15px !important">13 de Novembro</p>
-                  </div>
+                <div class="counter-number">
+                  <span
+                    >3</span
+                  >
+                  <p>Distritos</p>
                 </div>
+              </div>
+            </div>
+            <!-- /counter -->
 
-                <div class="col-sm-3 mb">
-                  <div class="counter-number">
-                    <div class="col-sm">
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <font-awesome-icon
-                          icon="fa-solid fa-map-location-dot"
-                          style="font-size: 40px"
-                          class="order-1"
-                        />
-                        <p class="order-2 mb-0 ms-3">283.538,00</p>
-                      </div>
-                    </div>
-                    <div class="border border-white border-2 h-80"></div>
-                    <p style="font-size: 15px !important">Área</p>
-                  </div>
+            <div class="col-sm-2">
+              <div class="counter-icon-number">
+                <div class="counter-icon">
+                  <font-awesome-icon
+                    icon="fa-solid fa-users"
+                    class="StleyIcomMenu"
+                  />
+                </div>
+                <div class="counter-number">
+                  <span
+                    >11</span
+                  >
+                  <p>Bairros</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm">
+              <div class="counter-icon-number">
+                <div class="counter-icon">
+                  <font-awesome-icon
+                    icon="fa-solid fa-users"
+                    class="StleyIcomMenu"
+                  />
+                </div>
+                <div class="counter-number">
+                  <span
+                    >137</span
+                  ><span> anos</span>
+                  <p class="text-center">13 de Novembro</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm">
+              <div class="counter-icon-number">
+                <div class="counter-icon">
+                  <font-awesome-icon
+                    icon="fa-solid fa-users"
+                    class="StleyIcomMenu"
+                  />
+                </div>
+                <div class="counter-number">
+                  <span
+                    >283</span
+                  ><span>.538,00</span>
+                  <p>Área</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!--End /Menu População -->
       </div>
     </section>
-    <!-- End Imagem Principal -->
+    <!--End /Menu População -->
 
     <!-- ======= MENUS ======= -->
     <section id="menu" class="featured-services py-5">
@@ -492,8 +484,10 @@
                           class="col-md-4"
                           style="padding-left: 15px; font-size: 14px"
                         >
-                          <font-awesome-icon icon="fa-solid fa-calendar-check" /> 4º
-                          BIMESTRE/2022
+                          <font-awesome-icon
+                            icon="fa-solid fa-calendar-check"
+                          />
+                          4º BIMESTRE/2022
                           <span
                             class="lrfDataExercicio"
                             style="float: right; font-size: 14px"
@@ -522,8 +516,10 @@
                           class="col-md-4"
                           style="padding-left: 15px; font-size: 14px"
                         >
-                          <font-awesome-icon icon="fa-solid fa-calendar-check" /> 2°
-                          QUADRIMESTRE/2022
+                          <font-awesome-icon
+                            icon="fa-solid fa-calendar-check"
+                          />
+                          2° QUADRIMESTRE/2022
                           <span
                             class="lrfDataExercicio"
                             style="float: right; font-size: 14px"
@@ -553,8 +549,10 @@
                           class="col-md-4"
                           style="padding-left: 15px; font-size: 14px"
                         >
-                          <font-awesome-icon icon="fa-solid fa-calendar-check" /> 3º
-                          BIMESTRE/2022
+                          <font-awesome-icon
+                            icon="fa-solid fa-calendar-check"
+                          />
+                          3º BIMESTRE/2022
                           <span class="lrfDataExercicio" style="float: right">
                             <font-awesome-icon
                               icon="fa-solid fa-calendar-days"
@@ -583,9 +581,14 @@
                           class="col-md-4"
                           style="padding-left: 15px; font-size: 14px"
                         >
-                          <font-awesome-icon icon="fa-solid fa-calendar-check" /> ANUAL/2023
+                          <font-awesome-icon
+                            icon="fa-solid fa-calendar-check"
+                          />
+                          ANUAL/2023
                           <span class="lrfDataExercicio" style="float: right">
-                            <font-awesome-icon icon="fa-solid fa-calendar-days" />
+                            <font-awesome-icon
+                              icon="fa-solid fa-calendar-days"
+                            />
                             15/06/2022
                           </span>
                         </div>
@@ -611,10 +614,14 @@
                           class="col-md-4"
                           style="padding-left: 15px; font-size: 14px"
                         >
-                          <font-awesome-icon icon="fa-solid fa-calendar-check" /> 2º
-                          BIMESTRE/2022
+                          <font-awesome-icon
+                            icon="fa-solid fa-calendar-check"
+                          />
+                          2º BIMESTRE/2022
                           <span class="lrfDataExercicio" style="float: right">
-                            <font-awesome-icon icon="fa-solid fa-calendar-days" />
+                            <font-awesome-icon
+                              icon="fa-solid fa-calendar-days"
+                            />
                             25/05/2022
                           </span>
                         </div>
@@ -640,10 +647,14 @@
                           class="col-md-4"
                           style="padding-left: 15px; font-size: 14px"
                         >
-                          <font-awesome-icon icon="fa-solid fa-calendar-check" /> 1°
-                          QUADRIMESTRE/2022
+                          <font-awesome-icon
+                            icon="fa-solid fa-calendar-check"
+                          />
+                          1° QUADRIMESTRE/2022
                           <span class="lrfDataExercicio" style="float: right">
-                           <font-awesome-icon icon="fa-solid fa-calendar-days" />
+                            <font-awesome-icon
+                              icon="fa-solid fa-calendar-days"
+                            />
                             25/05/2022
                           </span>
                         </div>
@@ -1457,6 +1468,7 @@ export default {
 
 
 <style>
+
 :root {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -1518,4 +1530,51 @@ section {
   padding: 60px 0;
   overflow: hidden;
 }
+
+.search-course-secound {
+  padding: 5px 0px 10px !important;
+  max-width: 1240px;
+  margin: 0 auto;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  top: -40px;
+  
+}
+
+.StleyIcomMenu {
+  font-size: 38px;
+  color: white;
+}
+
+.search-course-secound .counter-number p {
+  color: white;
+  margin: 0;
+}
+
+.counter-number p {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.counter-icon {
+  float: left;
+  width: 60px;
+  height: 45px;
+  line-height: 40px;
+  margin-right: 15px;
+  text-align: center;
+  border-right: 1px solid white;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+}
+
+
 </style>
