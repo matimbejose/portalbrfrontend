@@ -35,6 +35,7 @@
         </center>
       </div>
     </section>
+
     <!-- End Imagem Principal -->
 
     <!-- /Menu População -->
@@ -56,9 +57,6 @@
                 </div>
                 <div class="counter-number">
                   <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="13"
-                    data-purecounter-duration="0"
                     class="purecounter"
                     >13</span
                   ><span>.000+</span>
@@ -66,6 +64,8 @@
                 </div>
               </div>
             </div>
+            <!-- /counter -->
+
             <!-- /counter -->
 
             <div class="col-sm-2">
@@ -86,6 +86,9 @@
             </div>
             <!-- /counter -->
 
+
+            <!-- /counter -->
+
             <div class="col-sm-2">
               <div class="counter-icon-number">
                 <div class="counter-icon">
@@ -96,6 +99,7 @@
                 </div>
                 <div class="counter-number">
                   <span
+                    class="purecounter"
                     >11</span
                   >
                   <p>Bairros</p>
@@ -113,9 +117,11 @@
                 </div>
                 <div class="counter-number">
                   <span
+                    class="purecounter"
                     >137</span
-                  ><span> anos</span>
-                  <p class="text-center">13 de Novembro</p>
+                  >
+                  <span> anos</span>
+                  <p>13 de Novembro</p>
                 </div>
               </div>
             </div>
@@ -129,9 +135,8 @@
                   />
                 </div>
                 <div class="counter-number">
-                  <span
-                    >283</span
-                  ><span>.538,00</span>
+                  <span class="purecounter">283</span>
+                  <span>.538,00</span>
                   <p>Área</p>
                 </div>
               </div>
@@ -696,14 +701,14 @@
                 style="padding: 10px 15px; font-size: 14px"
                 rel="#lrfs"
               >
-                <i class="bi bi-file-earmark-plus-fill"></i> PORTARIAS
+                <font-awesome-icon icon="fa-solid fa-file-circle-plus" /> PORTARIAS
               </li>
               <li
                 class="button"
                 style="padding: 10px 15px; font-size: 14px"
                 rel="#rreo"
               >
-                <i class="bi bi-file-earmark-plus-fill"></i> DIÁRIAS
+                <font-awesome-icon icon="fa-solid fa-file-circle-plus" /> DIÁRIAS
               </li>
             </ul>
             <div id="tab-flex-column" class="tab-content tab-space">
@@ -755,10 +760,9 @@
                         style="font-size: 14px; margin-top: -10px"
                       >
                         <span>
-                          <i
-                            style="padding-left: 5px"
-                            class="bi bi-calendar3"
-                          ></i>
+                          <font-awesome-icon
+                              icon="fa-solid fa-calendar-days"
+                            />
                           30/09/2022
                         </span>
                       </div>
@@ -799,10 +803,9 @@
                         style="font-size: 14px; margin-top: -10px"
                       >
                         <span>
-                          <i
-                            style="padding-left: 5px"
-                            class="bi bi-calendar3"
-                          ></i>
+                          <font-awesome-icon
+                              icon="fa-solid fa-calendar-days"
+                            />
                           30/09/2022
                         </span>
                       </div>
@@ -843,10 +846,9 @@
                         style="font-size: 14px; margin-top: -10px"
                       >
                         <span>
-                          <i
-                            style="padding-left: 5px"
-                            class="bi bi-calendar3"
-                          ></i>
+                          <font-awesome-icon
+                              icon="fa-solid fa-calendar-days"
+                            />
                           30/09/2022
                         </span>
                       </div>
@@ -880,14 +882,14 @@
                 style="padding: 10px 15px; font-size: 14px"
                 rel="#prgfin"
               >
-                <i class="bi bi-file-earmark-plus-fill"></i> DECRETOS
+                <font-awesome-icon icon="fa-solid fa-file-circle-plus" /> DECRETOS
               </li>
               <li
                 class="button"
                 style="padding: 10px 15px; font-size: 14px"
                 rel="#ppa"
               >
-                <i class="bi bi-file-earmark-plus-fill"></i> OUTRAS PUBLICAÇÕES
+                <font-awesome-icon icon="fa-solid fa-file-circle-plus" /> OUTRAS PUBLICAÇÕES
               </li>
             </ul>
             <div id="tab-flex-column" class="tab-content tab-space">
@@ -939,10 +941,9 @@
                         style="font-size: 14px; margin-top: -10px"
                       >
                         <span>
-                          <i
-                            style="padding-left: 5px"
-                            class="bi bi-calendar3"
-                          ></i>
+                          <font-awesome-icon
+                              icon="fa-solid fa-calendar-days"
+                            />
                           30/09/2022
                         </span>
                       </div>
@@ -983,10 +984,9 @@
                         style="font-size: 14px; margin-top: -10px"
                       >
                         <span>
-                          <i
-                            style="padding-left: 5px"
-                            class="bi bi-calendar3"
-                          ></i>
+                          <font-awesome-icon
+                              icon="fa-solid fa-calendar-days"
+                            />
                           30/09/2022
                         </span>
                       </div>
@@ -1027,10 +1027,9 @@
                         style="font-size: 14px; margin-top: -10px"
                       >
                         <span>
-                          <i
-                            style="padding-left: 5px"
-                            class="bi bi-calendar3"
-                          ></i>
+                          <font-awesome-icon
+                              icon="fa-solid fa-calendar-days"
+                            />
                           30/09/2022
                         </span>
                       </div>
@@ -1085,7 +1084,7 @@
                   style="padding: 10px 15px; font-size: 14px"
                   rel="#lrfs"
                 >
-                  <i class="bi bi-file-earmark-plus-fill"></i> LICITAÇÕES
+                  <font-awesome-icon icon="fa-solid fa-file-circle-plus" /> LICITAÇÕES
                 </li>
               </ul>
               <div id="tab-flex-column" class="tab-content tab-space">
@@ -1138,10 +1137,9 @@
                           style="font-size: 14px; margin-top: -10px"
                         >
                           <span>
-                            <i
-                              style="padding-left: 5px"
-                              class="bi bi-calendar3"
-                            ></i>
+                            <font-awesome-icon
+                              icon="fa-solid fa-calendar-days"
+                            />
                             Publicação: 03/10/2022
                           </span>
                         </div>
@@ -1182,10 +1180,9 @@
                           style="font-size: 14px; margin-top: -10px"
                         >
                           <span>
-                            <i
-                              style="padding-left: 5px"
-                              class="bi bi-calendar3"
-                            ></i>
+                            <font-awesome-icon
+                              icon="fa-solid fa-calendar-days"
+                            />
                             Publicação: 03/10/2022
                           </span>
                         </div>
@@ -1229,10 +1226,9 @@
                           style="font-size: 14px; margin-top: -10px"
                         >
                           <span>
-                            <i
-                              style="padding-left: 5px"
-                              class="bi bi-calendar3"
-                            ></i>
+                            <font-awesome-icon
+                              icon="fa-solid fa-calendar-days"
+                            />
                             Publicação: 30/09/2022
                           </span>
                         </div>
@@ -1270,7 +1266,7 @@
                   style="padding: 10px 15px; font-size: 14px"
                   rel="#rreo"
                 >
-                  <i class="bi bi-file-earmark-plus-fill"></i> CONTRATOS
+                  <font-awesome-icon icon="fa-solid fa-file-circle-plus" /> CONTRATOS
                 </li>
               </ul>
               <div id="tab-flex-column" class="tab-content tab-space">
@@ -1323,10 +1319,9 @@
                           style="font-size: 14px; margin-top: -10px"
                         >
                           <span>
-                            <i
-                              style="padding-left: 5px"
-                              class="bi bi-calendar3"
-                            ></i>
+                            <font-awesome-icon
+                              icon="fa-solid fa-calendar-days"
+                            />
                             Publicação: 03/10/2022
                           </span>
                         </div>
@@ -1367,10 +1362,9 @@
                           style="font-size: 14px; margin-top: -10px"
                         >
                           <span>
-                            <i
-                              style="padding-left: 5px"
-                              class="bi bi-calendar3"
-                            ></i>
+                            <font-awesome-icon
+                              icon="fa-solid fa-calendar-days"
+                            />
                             Publicação: 03/10/2022
                           </span>
                         </div>
@@ -1414,10 +1408,9 @@
                           style="font-size: 14px; margin-top: -10px"
                         >
                           <span>
-                            <i
-                              style="padding-left: 5px"
-                              class="bi bi-calendar3"
-                            ></i>
+                            <font-awesome-icon
+                              icon="fa-solid fa-calendar-days"
+                            />
                             Publicação: 10/09/2022
                           </span>
                         </div>
@@ -1447,7 +1440,7 @@
       </div>
     </section>
     <!---- End Publicao de licitações  ---->
-
+    
     <FooterComponent />
   </div>
 </template>
@@ -1468,8 +1461,7 @@ export default {
 
 
 <style>
-
-:root {
+body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
@@ -1532,14 +1524,13 @@ section {
 }
 
 .search-course-secound {
-  padding: 5px 0px 10px !important;
+  padding: 20px 0px 10px !important;
   max-width: 1240px;
   margin: 0 auto;
   border-radius: 5px;
   position: relative;
   z-index: 2;
   top: -40px;
-  
 }
 
 .StleyIcomMenu {
@@ -1553,7 +1544,7 @@ section {
 }
 
 .counter-number p {
-  font-size: 14px;
+  font-size: 14px !important;
   font-weight: 700;
 }
 
@@ -1567,13 +1558,34 @@ section {
   border-right: 1px solid white;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
+}
+
+.search-course-secound .counter-number .counter-number,
+.search-course-secound .counter-number span {
+  color: white;
+}
+
+.counter-number span {
+  font-weight: 700;
+}
+
+.counter-number .counter-count , .counter-number span {
+  font-size: 27px;
+  line-height: -9px;
+  line-height: -9;
+}
+
+.text-center {
+ text-align: center !important;
 }
 
 
