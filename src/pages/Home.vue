@@ -712,7 +712,6 @@
                 <font-awesome-icon icon="fa-solid fa-file-circle-plus" />
                 DIÁRIAS
               </li>
-
             </ul>
             <div id="tab-flex-column" class="tab-content tab-space">
               <div
@@ -1444,6 +1443,7 @@
 <script>
 import FooterComponent from "../components/FooterComponent.vue";
 import HeaderComponent from "../components/HeaderComponent.vue";
+import axios from 'axios';
 
 export default {
   name: "Home",
@@ -1451,6 +1451,42 @@ export default {
     FooterComponent,
     HeaderComponent,
   },
+
+  date() {
+
+    return {
+      formData: {
+        fantasia: '',
+        url: '',
+        cnpj: ''
+      }
+    }
+
+  },
+
+  methods: {
+
+    loadDate() {
+      axios.get('https://itransparencia.com.br/v2/entidade/?url=http://camarameruoca.ce.gov.br')
+      .then((response) => {
+        console.log(response.data)
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+    }
+
+
+  },
+
+
+
+
+  mounted() {
+    this.loadDate();
+  }
+
+
 };
 </script>
 
