@@ -35,7 +35,6 @@
         </center>
       </div>
     </section>
-
     <!-- End Imagem Principal -->
 
     <!-- /Menu População -->
@@ -56,10 +55,7 @@
                   />
                 </div>
                 <div class="counter-number">
-                  <span
-                    class="purecounter"
-                    >13</span
-                  ><span>.000+</span>
+                  <span class="purecounter">13</span><span>.000+</span>
                   <p>População</p>
                 </div>
               </div>
@@ -77,15 +73,12 @@
                   />
                 </div>
                 <div class="counter-number">
-                  <span
-                    >3</span
-                  >
+                  <span>3</span>
                   <p>Distritos</p>
                 </div>
               </div>
             </div>
             <!-- /counter -->
-
 
             <!-- /counter -->
 
@@ -98,10 +91,7 @@
                   />
                 </div>
                 <div class="counter-number">
-                  <span
-                    class="purecounter"
-                    >11</span
-                  >
+                  <span class="purecounter">11</span>
                   <p>Bairros</p>
                 </div>
               </div>
@@ -116,10 +106,7 @@
                   />
                 </div>
                 <div class="counter-number">
-                  <span
-                    class="purecounter"
-                    >137</span
-                  >
+                  <span class="purecounter">137</span>
                   <span> anos</span>
                   <p>13 de Novembro</p>
                 </div>
@@ -130,7 +117,7 @@
               <div class="counter-icon-number">
                 <div class="counter-icon">
                   <font-awesome-icon
-                    icon="fa-solid fa-users"
+                    icon="fa-solid fa-map-location-dot"
                     class="StleyIcomMenu"
                   />
                 </div>
@@ -418,54 +405,66 @@
                 style="padding-left: 10px"
               >
                 <li
-                  class="active button"
+                  class="active button hvr-sweep-to-right rounded float-start"
                   style="padding: 10px 15px; font-size: 14px"
                   rel="#lrfs"
                 >
-                  <font-awesome-icon icon="fa-solid fa-file-circle-plus" /> LRF
+                  <font-awesome-icon icon="fa-solid fa-file-circle-plus" />
+                  LRF
                 </li>
+
                 <li
-                  class="button"
+                  class="active button hvr-sweep-to-right rounded float-start"
                   style="padding: 10px 15px; font-size: 14px"
-                  rel="#rreo"
+                  rel="#lrfs"
                 >
-                  <font-awesome-icon icon="fa-solid fa-file-circle-plus" /> RREO
+                  <font-awesome-icon icon="fa-solid fa-file-circle-plus" />
+                  RREO
                 </li>
+
                 <li
-                  class="button"
+                  class="active button hvr-sweep-to-right rounded float-start"
                   style="padding: 10px 15px; font-size: 14px"
-                  rel="#rgf"
+                  rel="#lrfs"
                 >
-                  <font-awesome-icon icon="fa-solid fa-file-circle-plus" /> RGF
+                  <font-awesome-icon icon="fa-solid fa-file-circle-plus" />
+                  RGF
                 </li>
+
                 <li
-                  class="button"
+                  class="active button hvr-sweep-to-right rounded float-start"
                   style="padding: 10px 15px; font-size: 14px"
-                  rel="#prgfin"
+                  rel="#lrfs"
                 >
                   <font-awesome-icon icon="fa-solid fa-file-circle-plus" />
                   PRGFIN
                 </li>
+
                 <li
-                  class="button"
+                  class="active button hvr-sweep-to-right rounded float-start"
                   style="padding: 10px 15px; font-size: 14px"
-                  rel="#ppa"
+                  rel="#lrfs"
                 >
-                  <font-awesome-icon icon="fa-solid fa-file-circle-plus" /> PPA
+                  <font-awesome-icon icon="fa-solid fa-file-circle-plus" />
+                  PPA
                 </li>
+
                 <li
-                  class="button"
+                  class="active button hvr-sweep-to-right rounded float-start"
                   style="padding: 10px 15px; font-size: 14px"
-                  rel="#loa"
+                  rel="#lrfs"
                 >
-                  <font-awesome-icon icon="fa-solid fa-file-circle-plus" /> LOA
+                  <font-awesome-icon icon="fa-solid fa-file-circle-plus" />
+                  LOA
                 </li>
+
                 <li
-                  class="button"
+                  class="active button hvr-sweep-to-right rounded float-start"
                   style="padding: 10px 15px; font-size: 14px"
-                  rel="#ldo"
+                  rel="#lrfs"
                 >
-                  <font-awesome-icon icon="fa-solid fa-file-circle-plus" /> LDO
+                  <font-awesome-icon icon="fa-solid fa-file-circle-plus" />
+                  LDO
                 </li>
               </ul>
               <div id="tab-flex-column" class="tab-content tab-space">
@@ -697,19 +696,23 @@
           <div class="card" style="padding: 8px 0 10px 0">
             <ul class="nav nav-tabs" role="tablist" style="padding-left: 10px">
               <li
-                class="active button"
+                class="active button hvr-sweep-to-right rounded float-start"
                 style="padding: 10px 15px; font-size: 14px"
                 rel="#lrfs"
               >
-                <font-awesome-icon icon="fa-solid fa-file-circle-plus" /> PORTARIAS
+                <font-awesome-icon icon="fa-solid fa-file-circle-plus" />
+                PORTARIAS
               </li>
+
               <li
-                class="button"
+                class="active button hvr-sweep-to-right rounded float-start"
                 style="padding: 10px 15px; font-size: 14px"
-                rel="#rreo"
+                rel="#lrfs"
               >
-                <font-awesome-icon icon="fa-solid fa-file-circle-plus" /> DIÁRIAS
+                <font-awesome-icon icon="fa-solid fa-file-circle-plus" />
+                DIÁRIAS
               </li>
+
             </ul>
             <div id="tab-flex-column" class="tab-content tab-space">
               <div
@@ -760,9 +763,7 @@
                         style="font-size: 14px; margin-top: -10px"
                       >
                         <span>
-                          <font-awesome-icon
-                              icon="fa-solid fa-calendar-days"
-                            />
+                          <font-awesome-icon icon="fa-solid fa-calendar-days" />
                           30/09/2022
                         </span>
                       </div>
@@ -803,9 +804,7 @@
                         style="font-size: 14px; margin-top: -10px"
                       >
                         <span>
-                          <font-awesome-icon
-                              icon="fa-solid fa-calendar-days"
-                            />
+                          <font-awesome-icon icon="fa-solid fa-calendar-days" />
                           30/09/2022
                         </span>
                       </div>
@@ -846,9 +845,7 @@
                         style="font-size: 14px; margin-top: -10px"
                       >
                         <span>
-                          <font-awesome-icon
-                              icon="fa-solid fa-calendar-days"
-                            />
+                          <font-awesome-icon icon="fa-solid fa-calendar-days" />
                           30/09/2022
                         </span>
                       </div>
@@ -878,18 +875,20 @@
           <div class="card" style="padding: 8px 0 10px 0">
             <ul class="nav nav-tabs" role="tablist" style="padding-left: 10px">
               <li
-                class="button"
+                class="active button hvr-sweep-to-right rounded float-start"
                 style="padding: 10px 15px; font-size: 14px"
-                rel="#prgfin"
+                rel="#lrfs"
               >
-                <font-awesome-icon icon="fa-solid fa-file-circle-plus" /> DECRETOS
+                <font-awesome-icon icon="fa-solid fa-file-circle-plus" />
+                DECRETOS
               </li>
               <li
-                class="button"
+                class="active button hvr-sweep-to-right rounded float-start"
                 style="padding: 10px 15px; font-size: 14px"
-                rel="#ppa"
+                rel="#lrfs"
               >
-                <font-awesome-icon icon="fa-solid fa-file-circle-plus" /> OUTRAS PUBLICAÇÕES
+                <font-awesome-icon icon="fa-solid fa-file-circle-plus" />
+                OUTRAS PUBLICAÇÕES
               </li>
             </ul>
             <div id="tab-flex-column" class="tab-content tab-space">
@@ -941,9 +940,7 @@
                         style="font-size: 14px; margin-top: -10px"
                       >
                         <span>
-                          <font-awesome-icon
-                              icon="fa-solid fa-calendar-days"
-                            />
+                          <font-awesome-icon icon="fa-solid fa-calendar-days" />
                           30/09/2022
                         </span>
                       </div>
@@ -984,9 +981,7 @@
                         style="font-size: 14px; margin-top: -10px"
                       >
                         <span>
-                          <font-awesome-icon
-                              icon="fa-solid fa-calendar-days"
-                            />
+                          <font-awesome-icon icon="fa-solid fa-calendar-days" />
                           30/09/2022
                         </span>
                       </div>
@@ -1027,9 +1022,7 @@
                         style="font-size: 14px; margin-top: -10px"
                       >
                         <span>
-                          <font-awesome-icon
-                              icon="fa-solid fa-calendar-days"
-                            />
+                          <font-awesome-icon icon="fa-solid fa-calendar-days" />
                           30/09/2022
                         </span>
                       </div>
@@ -1077,14 +1070,15 @@
               <ul
                 class="nav nav-tabs"
                 role="tablist"
-                style="padding-left: 10px"
+                style="padding-left: 10px; background-color: "
               >
                 <li
-                  class="active button"
+                  class="active button hvr-sweep-to-right rounded float-start"
                   style="padding: 10px 15px; font-size: 14px"
                   rel="#lrfs"
                 >
-                  <font-awesome-icon icon="fa-solid fa-file-circle-plus" /> LICITAÇÕES
+                  <font-awesome-icon icon="fa-solid fa-file-circle-plus" />
+                  LICITAÇÕES
                 </li>
               </ul>
               <div id="tab-flex-column" class="tab-content tab-space">
@@ -1262,11 +1256,12 @@
                 style="padding-left: 10px"
               >
                 <li
-                  class="button"
+                  class="active button hvr-sweep-to-right rounded float-start"
                   style="padding: 10px 15px; font-size: 14px"
-                  rel="#rreo"
+                  rel="#lrfs"
                 >
-                  <font-awesome-icon icon="fa-solid fa-file-circle-plus" /> CONTRATOS
+                  <font-awesome-icon icon="fa-solid fa-file-circle-plus" />
+                  CONTRATOS
                 </li>
               </ul>
               <div id="tab-flex-column" class="tab-content tab-space">
@@ -1440,7 +1435,7 @@
       </div>
     </section>
     <!---- End Publicao de licitações  ---->
-    
+
     <FooterComponent />
   </div>
 </template>
@@ -1578,15 +1573,42 @@ section {
   font-weight: 700;
 }
 
-.counter-number .counter-count , .counter-number span {
+.counter-number .counter-count,
+.counter-number span {
   font-size: 27px;
   line-height: -9px;
   line-height: -9;
 }
 
 .text-center {
- text-align: center !important;
+  text-align: center !important;
 }
 
+.hvr-sweep-to-right:hover,
+.hvr-sweep-to-right:focus,
+.hvr-sweep-to-right:active {
+  color: white;
+}
 
+.hvr-sweep-to-right {
+  display: inline-block;
+  margin: 0.4em;
+  padding: 1em;
+  background: #00a859;
+  color: #fff;
+  text-decoration: none;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.rounded {
+  border-radius: var(--bs-border-radius) !important;
+}
 </style>
