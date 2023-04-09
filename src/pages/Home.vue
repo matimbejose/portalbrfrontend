@@ -1443,7 +1443,7 @@
 <script>
 import FooterComponent from "../components/FooterComponent.vue";
 import HeaderComponent from "../components/HeaderComponent.vue";
-import axios from 'axios';
+import axios from "axios";
 
 export default {
   name: "Home",
@@ -1453,38 +1453,32 @@ export default {
   },
 
   date() {
-
     return {
-      formData: {
-        fantasia: '',
-        url: '',
-        cnpj: ''
-      }
-    }
-
+      dados: [],
+    };
   },
 
   methods: {
-
     loadDate() {
-      axios.get('https://itransparencia.com.br/v2/entidade/?url=http://camarameruoca.ce.gov.br')
-      .then((response) => {
-        console.log(response.data)
-      })
-      .catch((error) => {
-        console.log(error)
-      })
-    }
+      axios
+        .get(
+          "https://itransparencia.com.br/v2/entidade/?url=http://camarameruoca.ce.gov.br"
+        )
+        .then((response) => {
+          this.dados = response.data;
 
-
+          console.log(this.dados);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
   },
-
-
-
 
   mounted() {
     this.loadDate();
-  }
+    
+  },
 
 
 };
