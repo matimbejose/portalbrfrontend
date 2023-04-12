@@ -27,7 +27,9 @@ import {
     faFileCirclePlus,
     faCalendarDay,
     faCalendarCheck,
-    faMapLocation
+    faMapLocation,
+    faVolumeOff,
+    faMobileScreenButton,
 } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -40,7 +42,7 @@ import {
 
 
 /* add icons to the library */
-library.add(faUserSecret, faLocationDot, faEnvelope, faPhone, faCheck, faUsers, faHouse, faMapLocationDot, faCircleExclamation, faMoneyBill, faMessage, faExclamation, faCalendarDays, faNewspaper, faVideo, faSpinner, faFileCirclePlus, faCalendarDay, faCalendarCheck, faMapLocation)
+library.add(faUserSecret, faLocationDot, faEnvelope, faPhone, faCheck, faUsers, faHouse, faMapLocationDot, faCircleExclamation, faMoneyBill, faMessage, faExclamation, faCalendarDays, faNewspaper, faVideo, faSpinner, faFileCirclePlus, faCalendarDay, faCalendarCheck, faMapLocation,    faPhone,faVolumeOff,    faMobileScreenButton)
 
 
 import "bootstrap/dist/css/bootstrap.min.css";

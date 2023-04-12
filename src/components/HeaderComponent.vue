@@ -1,13 +1,61 @@
 <template>
   <div class="main">
+    <section
+      id="topbar"
+      class="d-flex align-items-center"
+      style="background-color: #00a859 !important"
+    >
+      <div
+        class="container d-sm-flex justify-content-center justify-content-md-between"
+      >
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-telephone-fill d-flex align-items-center ms-3">
+            <font-awesome-icon icon="fa-solid fa-phone" />
+            <a href="tel:"><span>(88) 3649-1136</span></a>
+          </i>
+          <i class="bi bi-info-circle-fill d-flex align-items-center ms-3">
+            <font-awesome-icon icon="fa-solid fa-circle-exclamation" />
+            <a href="#">Transparência</a></i
+          >
+          <i class="bi bi-chat-fill d-flex align-items-center ms-3">
+            <font-awesome-icon icon="fa-solid fa-volume-off" />
+            <a href="#"> Ouvidoria</a></i
+          >
+          <i class="bi bi-info-square-fill d-flex align-items-center ms-3">
+            <font-awesome-icon icon="fa-solid fa-mobile-screen-button" />
+            <a href="#">E-sic</a></i
+          >
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a
+            href="https://www.facebook.com/pmmeruoca"
+            target="_blank"
+            class="facebook"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/prefeiturademeruoca/"
+            target="_blank"
+            class="instagram"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a
+            href='https://www.youtube.com/c/pmmeruoca"'
+            target="_blank"
+            class="youtube"
+            ><i class="bi bi-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
     <!-- Navigation -->
     <nav
-      style="position: fixed; top: 0; left: 0; right: 0"
       class="navbar navbar-expand-lg navbar-white bg-white static-top sticky-top"
     >
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="../assets/logo.png" alt="logo"   height="60" />
+          <img src="../assets/logo.png" alt="logo" height="60" />
         </a>
         <button
           class="navbar-toggler"
@@ -274,6 +322,57 @@ export default {
 
 
 <style>
+#topbar {
+  background: #106eea;
+  background-color: rgb(16, 110, 234);
+  height: 40px;
+  font-size: 12px;
+  transition: all 0.5s;
+  color: #fff;
+  padding: 0;
+}
+
+#topbar .contact-info i a,
+#topbar .contact-info i span {
+  padding-left: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+#topbar .contact-info i a {
+  line-height: 0;
+}
+
+#topbar .contact-info i {
+  font-style: normal;
+  color: #fff;
+}
+
+#topbar {
+  font-size: 12px;
+  color: #fff;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 #hero {
   background-image: url(../assets/cidade.jpg);
   background-color: rgba(0, 0, 0, 0.5);
@@ -300,7 +399,7 @@ export default {
 
 .icon-box {
   position: relative;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .icon-box::after {
@@ -311,7 +410,7 @@ export default {
   width: 100%;
   height: 0;
   background-color: #da4849;
-  z-index: -1; 
+  z-index: -1;
   transition: height 0.2s ease-out;
 }
 
