@@ -1,9 +1,12 @@
 <template>
-  <div class="main">
+  <div 
+  class="sempreNoTompo"
+    style="position: fixed; top: 0; left: 0; right: 0; z-index: 100;"
+  >
     <section
       id="topbar"
       class="d-flex align-items-center"
-      style="background-color: #00a859 !important"
+      style="background-color: #00a859 !important;"
     >
       <div
         class="container d-sm-flex justify-content-center justify-content-md-between"

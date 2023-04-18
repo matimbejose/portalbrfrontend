@@ -1,13 +1,12 @@
 <template>
   <div class="content">
     <HeaderComponent />
-
     <!-- ======= Imagem Principal ======= -->
     <section id="hero" class="d-flex align-items-center">
       <div class="container">
         <h1 class="text-center" style="margin-top: 30px">
           Bem vindo ao portal da
-        </h1>
+          </h1>
         <h1 class="text-center" style="margin-bottom: 70px">
           Prefeitura de Meruoca
         </h1>
