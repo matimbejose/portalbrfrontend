@@ -62,7 +62,6 @@
             <!-- /counter -->
 
             <!-- /counter -->
-
             <div class="col-sm-2">
               <div class="counter-icon-number">
                 <div class="counter-icon">
@@ -79,7 +78,7 @@
             </div>
             <!-- /counter -->
 
-            <!-- /counter -->
+            <!-- /counter -->                                                                             
 
             <div class="col-sm-2">
               <div class="counter-icon-number">
@@ -338,7 +337,6 @@
               style="border: none; overflow: hidden; border-radius: 10px"
               scrolling="no"
               allowfullscreen="true"
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
               width="100%"
               height="420"
               frameborder="0"
@@ -354,7 +352,6 @@
                   style="border: none; overflow: hidden; border-radius: 10px"
                   scrolling="no"
                   allowfullscreen="true"
-                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                   width="100%"
                   height="207"
                   frameborder="0"
@@ -368,7 +365,6 @@
                   style="border: none; overflow: hidden; border-radius: 10px"
                   scrolling="no"
                   allowfullscreen="true"
-                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                   width="100%"
                   height="207"
                   frameborder="0"
@@ -1473,7 +1469,6 @@ export default {
   },
 
   mounted() {
-    console.log("")
     this.loadDate();
     
   },
@@ -1484,6 +1479,28 @@ export default {
 
 
 <style>
+#hero {
+  background-image: url(../assets/cidade.jpg);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 600px;
+}
+
+#hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -1508,6 +1525,17 @@ body {
   text-transform: uppercase;
   border-radius: 50px;
 }
+
+.title {
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+
+
+
 
 h1,
 h2,

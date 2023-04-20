@@ -1,12 +1,12 @@
 <template>
-  <div 
-  class="sempreNoTompo"
-    style="position: fixed; top: 0; left: 0; right: 0; z-index: 100;"
+  <div
+    class="sempreNoTompo"
+    style="position: fixed; top: 0; left: 0; right: 0; z-index: 100"
   >
     <section
       id="topbar"
       class="d-flex align-items-center"
-      style="background-color: #00a859 !important;"
+      style="background-color: #00a859 !important"
     >
       <div
         class="container d-sm-flex justify-content-center justify-content-md-between"
@@ -53,12 +53,14 @@
     </section>
 
     <!-- Navigation -->
+
     <nav
+      id="navabar"
       class="navbar navbar-expand-lg navbar-white bg-white static-top sticky-top"
     >
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="../assets/logo.png" alt="logo" height="60" />
+          <img :src="dados.logotipo" alt="logo" height="75" />
         </a>
         <button
           class="navbar-toggler"
@@ -71,8 +73,18 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          style="margin-left: 150px"
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
           <ul class="navbar-nav me-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" aria-expanded="false">
+                <font-awesome-icon icon="fa-solid fa-house" />
+              </a>
+            </li>
+
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -81,6 +93,7 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                style="margin-right: 10px"
               >
                 PREFEITURA
               </a>
@@ -104,6 +117,7 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                style="margin-right: 10px"
               >
                 O MUNICÍPIO
               </a>
@@ -130,6 +144,7 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                style="margin-right: 10px"
               >
                 SECRETARIAS
               </a>
@@ -197,8 +212,9 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                style="margin-right: 10px"
               >
-                TRANSPARÊNCIA
+                LRF – CONTAS PÚBLICAS
               </a>
 
               <ul
@@ -246,6 +262,21 @@
                 </li>
               </ul>
             </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="margin-right: 10px"
+              >
+                TRANSPARÊNCIA
+              </a>
+            </li>
+
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -254,6 +285,7 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                style="margin-right: 10px"
               >
                 PUBLICAÇÕES
               </a>
@@ -318,8 +350,35 @@
 
 
 <script>
+import axios from "axios";
+
 export default {
   name: "HeaderComponent",
+
+  data() {
+    return {
+      dados: {},
+    };
+  },
+
+  methods: {
+    loadDate() {
+      axios
+        .get(
+          "https://itransparencia.com.br/v2/entidade/?url=http://camarameruoca.ce.gov.br"
+        )
+        .then((response) => {
+          this.dados = response.data;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+  },
+
+  mounted() {
+    this.loadDate();
+  },
 };
 </script>
 
@@ -362,106 +421,11 @@ export default {
   color: #fff;
 }
 
-.align-items-center {
-  align-items: center !important;
-}
-
-.d-flex {
-  display: flex !important;
-}
-
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-
-#hero {
-  background-image: url(../assets/cidade.jpg);
-  background-color: rgba(0, 0, 0, 0.5);
-  background-blend-mode: multiply;
-  color: white;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-#search-course p {
-  font-size: 30px;
-  color: #fff;
-}
-
-.title {
-  text-decoration: none;
-  color: black;
-  white-space: nowrap;
-  font-size: 18px;
-  font-family: "Roboto", sans-serif;
-}
-
-.icon-box {
-  position: relative;
-  z-index: 1;
-}
-
-.icon-box::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 0;
-  background-color: #da4849;
-  z-index: -1;
-  transition: height 0.2s ease-out;
-}
-
-.icon-box:hover::after {
-  height: 100%;
-}
-
-.icon-box:hover {
-  background-color: white;
-  color: black;
-}
-
-.icon-box:hover a {
-  color: white;
-}
-
-#hero h1 {
-  margin: 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-}
-
 .navbar a,
 .navbar a:focus {
   font-size: 12px;
   font-weight: 600;
 }
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover > a {
-  color: #da4849;
-}
-
-.navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover > a {
-  color: #da4849;
-}
-
-navbar .dropdown ul a {
-  padding: 10px 20px;
-  font-weight: 400;
-}
-
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
