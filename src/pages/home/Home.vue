@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <HeaderComponent />
+    <HeaderComponentVue />
     <!-- ======= Imagem Principal ======= -->
     <section id="hero" class="d-flex align-items-center">
       <div class="container">
@@ -1430,21 +1430,21 @@
     </section>
     <!---- End Publicao de licitações  ---->
 
-    <FooterComponent />
+    <FooterComponentVue />
   </div>
 </template>
 
 
 <script>
-import FooterComponent from "../components/FooterComponent.vue";
-import HeaderComponent from "../components/HeaderComponent.vue";
 import axios from "axios";
+import HeaderComponentVue from '../../components/HeaderComponent.vue';
+import FooterComponentVue from '../../components/FooterComponent.vue';
 
 export default {
   name: "Home",
   components: {
-    FooterComponent,
-    HeaderComponent,
+    HeaderComponentVue,
+    FooterComponentVue,
   },
 
   data() {
@@ -1478,193 +1478,6 @@ export default {
 </script>
 
 
-<style>
-#hero {
-  background-image: url(../assets/cidade.jpg);
-  background-color: rgba(0, 0, 0, 0.5);
-  background-blend-mode: multiply;
-  color: white;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 600px;
-}
-
-#hero h1 {
-  margin: 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-}
-
-
-body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
-}
-.section-title h2 {
-  font-size: 13px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  padding: 8px 20px;
-  margin: 0;
-  background-color: rgb(231, 241, 253);
-  background-position-x: 0%;
-  background-position-y: 0%;
-  background-repeat: repeat;
-  background-attachment: scroll;
-  background-image: none;
-  background-size: auto;
-  background-origin: padding-box;
-  background-clip: border-box;
-  color: #da4849;
-  display: inline-block;
-  text-transform: uppercase;
-  border-radius: 50px;
-}
-
-.title {
-  text-decoration: none;
-  color: black;
-  white-space: nowrap;
-  font-size: 18px;
-  font-family: "Roboto", sans-serif;
-}
-
-
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Roboto", sans-serif;
-}
-
-.section-title h3 span {
-  color: #da4849;
-}
-
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-
-.section-title h3 {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.section-title {
-  text-align: center;
-}
-
-.section-bg {
-  background-color: #f6f9fe;
-}
-
-section {
-  padding: 60px 0;
-  overflow: hidden;
-}
-
-.search-course-secound {
-  padding: 20px 0px 10px !important;
-  max-width: 1240px;
-  margin: 0 auto;
-  border-radius: 5px;
-  position: relative;
-  z-index: 2;
-  top: -40px;
-}
-
-.StleyIcomMenu {
-  font-size: 38px;
-  color: white;
-}
-
-.search-course-secound .counter-number p {
-  color: white;
-  margin: 0;
-}
-
-.counter-number p {
-  font-size: 14px !important;
-  font-weight: 700;
-}
-
-.counter-icon {
-  float: left;
-  width: 60px;
-  height: 45px;
-  line-height: 40px;
-  margin-right: 15px;
-  text-align: center;
-  border-right: 1px solid white;
-}
-
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-
-.row {
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
-}
-
-.search-course-secound .counter-number .counter-number,
-.search-course-secound .counter-number span {
-  color: white;
-}
-
-.counter-number span {
-  font-weight: 700;
-}
-
-.counter-number .counter-count,
-.counter-number span {
-  font-size: 27px;
-  line-height: -9px;
-  line-height: -9;
-}
-
-.text-center {
-  text-align: center !important;
-}
-
-.hvr-sweep-to-right:hover,
-.hvr-sweep-to-right:focus,
-.hvr-sweep-to-right:active {
-  color: white;
-}
-
-.hvr-sweep-to-right {
-  display: inline-block;
-  margin: 0.4em;
-  padding: 1em;
-  background: #00a859;
-  color: #fff;
-  text-decoration: none;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  position: relative;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-
-.rounded {
-  border-radius: var(--bs-border-radius) !important;
-}
+<style lang="css">
+@import url('Style.css');
 </style>

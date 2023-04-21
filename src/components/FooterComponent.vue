@@ -123,13 +123,13 @@ export default {
 
 <style>
 #contato {
-  background-image: url(../assets/cidade.jpg);
-  background-color: rgba(0, 0, 0, 0.5);
-  background-blend-mode: multiply;
-  color: white;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-</style>
+    background-image: url(../assets/cidade.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    color: white;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  </style>

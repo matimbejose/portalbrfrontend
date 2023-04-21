@@ -53,7 +53,6 @@
     </section>
 
     <!-- Navigation -->
-
     <nav
       id="navabar"
       class="navbar navbar-expand-lg navbar-white bg-white static-top sticky-top"
@@ -74,16 +73,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          style="margin-left: 150px"
           class="collapse navbar-collapse"
           id="navbarSupportedContent"
         >
           <ul class="navbar-nav me-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#" role="button" aria-expanded="false">
-                <font-awesome-icon icon="fa-solid fa-house" />
-              </a>
-            </li>
 
             <li class="nav-item dropdown">
               <a
@@ -93,7 +86,6 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                style="margin-right: 10px"
               >
                 PREFEITURA
               </a>
@@ -117,7 +109,6 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                style="margin-right: 10px"
               >
                 O MUNICÍPIO
               </a>
@@ -144,7 +135,6 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                style="margin-right: 10px"
               >
                 SECRETARIAS
               </a>
@@ -212,7 +202,6 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                style="margin-right: 10px"
               >
                 LRF – CONTAS PÚBLICAS
               </a>
@@ -271,7 +260,6 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                style="margin-right: 10px"
               >
                 TRANSPARÊNCIA
               </a>
@@ -285,7 +273,6 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                style="margin-right: 10px"
               >
                 PUBLICAÇÕES
               </a>
@@ -385,51 +372,51 @@ export default {
 
 <style>
 #topbar {
-  background: #106eea;
-  background-color: rgb(16, 110, 234);
-  height: 40px;
-  font-size: 12px;
-  transition: all 0.5s;
-  color: #fff;
-  padding: 0;
-}
-
-#topbar .contact-info i a,
-#topbar .contact-info i span {
-  padding-left: 5px;
-  color: #fff;
-  text-decoration: none;
-}
-
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-
-#topbar .contact-info i a {
-  line-height: 0;
-}
-
-#topbar .contact-info i {
-  font-style: normal;
-  color: #fff;
-}
-
-#topbar {
-  font-size: 12px;
-  color: #fff;
-}
-
-.navbar a,
-.navbar a:focus {
-  font-size: 12px;
-  font-weight: 600;
-}
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover > a {
-  color: #da4849;
-}
-</style>
+    background: #106eea;
+    background-color: rgb(16, 110, 234);
+    height: 40px;
+    font-size: 12px;
+    transition: all 0.5s;
+    color: #fff;
+    padding: 0;
+  }
+  
+  #topbar .contact-info i a,
+  #topbar .contact-info i span {
+    padding-left: 5px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+  }
+  
+  #topbar .contact-info i a {
+    line-height: 0;
+  }
+  
+  #topbar .contact-info i {
+    font-style: normal;
+    color: #fff;
+  }
+  
+  #topbar {
+    font-size: 12px;
+    color: #fff;
+  }
+  
+  .navbar a,
+  .navbar a:focus {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover > a {
+    color: #da4849;
+  }
+  </style>
