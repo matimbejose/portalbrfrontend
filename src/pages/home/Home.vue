@@ -133,49 +133,49 @@
     <!--End /Menu População -->
 
     <!-- ======= MENUS ======= -->
-    <section id="menu" class="featured-services py-5">
-      <div class="container">
-        <div class="row gx-5 justify-content-center">
-          <div class="col-sm-6 col-lg-3">
-            <div class="icon-box text-center">
-              <font-awesome-icon
-                :icon="['fas', 'circle-exclamation']"
-                style="font-size: 50px"
-              />
-              <h3><a class="title" href="#">Portal da Transparência</a></h3>
+<section id="menu" class="featured-services" style="padding: 20px 0 60px 0;">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+            <div class="container">
+                <center>
+                    <div class="row">
+                        <div class="col-6 col-sm">
+                            <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+
+                                <div class="icon"><i class="bi bi-info-circle-fill"></i></div>
+                                <h3 class="title"><a href="">Portal da Transparência</a></h3>
+
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm">
+
+                            <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                                <div class="icon"><i class="bi bi-cash-coin"></i></div>
+                                <h4 class="title"><a href=""> Gestão Fiscal LRF</a></h4>
+                            </div>
+
+                        </div>
+                        <div class=" col-6 col-sm">
+
+                            <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                                <div class="icon"><i class="bi bi-chat-fill"></i></div>
+                                <h2 class="title"><a href="">Ouvidoria Municipal </a></h2>
+                            </div>
+
+                        </div>
+                        <div class="col-6 col-sm">
+
+                            <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                                <div class="icon"><i class="bi bi-info"></i></div>
+                                <h4 class="title"><a href="">Acesso a Informação </a></h4>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </center>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="icon-box text-center">
-              <font-awesome-icon
-                icon="fa-solid fa-money-bill"
-                style="font-size: 50px"
-              />
-              <h3><a class="title" href="#">Gestão Fiscal LRF</a></h3>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="icon-box text-center">
-              <font-awesome-icon
-                icon="fa-regular fa-message"
-                style="font-size: 50px"
-              />
-              <h3><a class="title" href="#">Ouvidoria Municipal</a></h3>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="icon-box text-center">
-              <font-awesome-icon
-                icon="fa-solid fa-exclamation"
-                style="font-size: 50px"
-              />
-              <h3>
-                <a href="#" class="title">Acesso a Informação</a>
-              </h3>
-            </div>
-          </div>
         </div>
-      </div>
+        
     </section>
     <!-- /MENUS -->
 

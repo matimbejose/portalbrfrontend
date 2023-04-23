@@ -9,6 +9,8 @@
     background-attachment: fixed;
     height: 600px;
   }
+
+
   #hero h1 {
     margin: 0;
     font-size: 48px;
@@ -17,16 +19,11 @@
     color: #fff;
     font-family: "Poppins", sans-serif;
   }
-  body {
-    font-family: "Open Sans", sans-serif;
-    color: #444444;
-  }
   .section-title h2 {
     font-size: 13px;
     letter-spacing: 1px;
     font-weight: 700;
     padding: 8px 20px;
-    margin: 0;
     background-color: rgb(231, 241, 253);
     background-position-x: 0%;
     background-position-y: 0%;
@@ -41,24 +38,6 @@
     text-transform: uppercase;
     border-radius: 50px;
   }
-  .title {
-    text-decoration: none;
-    color: black;
-    white-space: nowrap;
-    font-size: 18px;
-    font-family: "Roboto", sans-serif;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Roboto", sans-serif;
-  }
-  .section-title h3 span {
-    color: #da4849;
-  }
   *,
   ::after,
   ::before {
@@ -70,6 +49,7 @@
   }
   .section-title {
     text-align: center;
+    padding-bottom: 30px;
   }
   .section-bg {
     background-color: #f6f9fe;
@@ -108,15 +88,6 @@
     text-align: center;
     border-right: 1px solid white;
   }
-  *,
-  ::after,
-  ::before {
-    box-sizing: border-box;
-  }
-  .row {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-  }
   .search-course-secound .counter-number .counter-number,
   .search-course-secound .counter-number span {
     color: white;
@@ -130,14 +101,7 @@
     line-height: -9px;
     line-height: -9;
   }
-  .text-center {
-    text-align: center !important;
-  }
-  .hvr-sweep-to-right:hover,
-  .hvr-sweep-to-right:focus,
-  .hvr-sweep-to-right:active {
-    color: white;
-  }
+
   .hvr-sweep-to-right {
     display: inline-block;
     margin: 0.4em;
@@ -155,6 +119,8 @@
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
   }
-  .rounded {
-    border-radius: var(--bs-border-radius) !important;
+
+  .section-title h3 span {
+    color: #DA4849;
   }
+  

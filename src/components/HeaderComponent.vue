@@ -34,20 +34,20 @@
             href="https://www.facebook.com/pmmeruoca"
             target="_blank"
             class="facebook"
-            ><i class="bi bi-facebook"></i
+            ><i class="fa fa-facebook-official" aria-hidden="true"></i
           ></a>
           <a
             href="https://www.instagram.com/prefeiturademeruoca/"
             target="_blank"
             class="instagram"
-            ><i class="bi bi-instagram"></i
+            ><i class="fa fa-instagram" aria-hidden="true"></i
           ></a>
           <a
             href='https://www.youtube.com/c/pmmeruoca"'
             target="_blank"
             class="youtube"
-            ><i class="bi bi-youtube"></i
-          ></a>
+            ><i class="fa fa-youtube-play" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
     </section>
@@ -59,7 +59,7 @@
     >
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img :src="dados.logotipo" alt="logo" height="75" />
+          <img :src="dados.logotipo" alt="logo" height="70" />
         </a>
         <button
           class="navbar-toggler"
@@ -72,12 +72,8 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav me-auto">
-
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  ms-auto">
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -345,6 +341,7 @@ export default {
   data() {
     return {
       dados: {},
+      isDropdownOpen: false,
     };
   },
 
@@ -361,6 +358,14 @@ export default {
           console.log(error);
         });
     },
+
+    mouseover() {
+      this.isOpen = true;
+    },
+    mouseleave() {
+      this.isOpen = false;
+    }
+
   },
 
   mounted() {
@@ -371,52 +376,67 @@ export default {
 
 
 <style>
+/* customize the  nav bar */
+#navabar {
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+#topbar .social-links a:hover {
+  color: white;
+}
+
+#topbar .social-links a {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 0;
+  margin: 10px;
+}
+
 #topbar {
-    background: #106eea;
-    background-color: rgb(16, 110, 234);
-    height: 40px;
-    font-size: 12px;
-    transition: all 0.5s;
-    color: #fff;
-    padding: 0;
-  }
-  
-  #topbar .contact-info i a,
-  #topbar .contact-info i span {
-    padding-left: 5px;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  *,
-  ::after,
-  ::before {
-    box-sizing: border-box;
-  }
-  
-  #topbar .contact-info i a {
-    line-height: 0;
-  }
-  
-  #topbar .contact-info i {
-    font-style: normal;
-    color: #fff;
-  }
-  
-  #topbar {
-    font-size: 12px;
-    color: #fff;
-  }
-  
-  .navbar a,
-  .navbar a:focus {
-    font-size: 12px;
-    font-weight: 600;
-  }
-  .navbar a:hover,
-  .navbar .active,
-  .navbar .active:focus,
-  .navbar li:hover > a {
-    color: #da4849;
-  }
-  </style>
+  background: #106eea;
+  background-color: rgb(16, 110, 234);
+  height: 40px;
+  font-size: 12px;
+  transition: all 0.5s;
+  color: #fff;
+  padding: 0;
+}
+
+#topbar .contact-info i a,
+#topbar .contact-info i span {
+  padding-left: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+#topbar .contact-info i a {
+  line-height: 0;
+}
+
+#topbar .contact-info i {
+  font-style: normal;
+  color: #fff;
+}
+
+#topbar {
+  font-size: 12px;
+  color: #fff;
+}
+
+.navbar a,
+.navbar a:focus {
+  font-size: 12px;
+  font-weight: 600;
+}
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: #da4849;
+}
+</style>
