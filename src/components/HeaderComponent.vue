@@ -73,7 +73,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav  ms-auto">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -97,7 +97,9 @@
               </ul>
             </li>
 
-            <li class="nav-item dropdown">
+            <li
+              class="nav-item dropdown"
+            >
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -341,7 +343,9 @@ export default {
   data() {
     return {
       dados: {},
-      isDropdownOpen: false,
+      dropdown1: false,
+      dropdown2: false,
+      dropdown3: false,
     };
   },
 
@@ -359,13 +363,6 @@ export default {
         });
     },
 
-    mouseover() {
-      this.isOpen = true;
-    },
-    mouseleave() {
-      this.isOpen = false;
-    }
-
   },
 
   mounted() {
@@ -376,6 +373,12 @@ export default {
 
 
 <style>
+
+/* customize the drop down menu */
+.dropdown:hover .dropdown-menu {
+  display: block ;
+
+}
 /* customize the  nav bar */
 #navabar {
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
