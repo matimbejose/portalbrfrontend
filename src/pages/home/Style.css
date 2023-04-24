@@ -1,126 +1,174 @@
 #hero {
-    background-image: url(../../assets/cidade.jpg);
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: multiply;
-    color: white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 600px;
-  }
+  background-image: url(../../assets/cidade.jpg);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 600px;
+}
 
 
-  #hero h1 {
-    margin: 0;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 56px;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-  }
-  .section-title h2 {
-    font-size: 13px;
-    letter-spacing: 1px;
-    font-weight: 700;
-    padding: 8px 20px;
-    background-color: rgb(231, 241, 253);
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background-image: none;
-    background-size: auto;
-    background-origin: padding-box;
-    background-clip: border-box;
-    color: #da4849;
-    display: inline-block;
-    text-transform: uppercase;
-    border-radius: 50px;
-  }
-  *,
-  ::after,
-  ::before {
-    box-sizing: border-box;
-  }
-  .section-title h3 {
-    font-size: 32px;
-    font-weight: 700;
-  }
-  .section-title {
-    text-align: center;
-    padding-bottom: 30px;
-  }
-  .section-bg {
-    background-color: #f6f9fe;
-  }
-  section {
-    padding: 60px 0;
-    overflow: hidden;
-  }
-  .search-course-secound {
-    padding: 20px 0px 10px !important;
-    max-width: 1240px;
-    margin: 0 auto;
-    border-radius: 5px;
-    position: relative;
-    z-index: 2;
-    top: -40px;
-  }
-  .StleyIcomMenu {
-    font-size: 38px;
-    color: white;
-  }
-  .search-course-secound .counter-number p {
-    color: white;
-    margin: 0;
-  }
-  .counter-number p {
-    font-size: 14px !important;
-    font-weight: 700;
-  }
-  .counter-icon {
-    float: left;
-    width: 60px;
-    height: 45px;
-    line-height: 40px;
-    margin-right: 15px;
-    text-align: center;
-    border-right: 1px solid white;
-  }
-  .search-course-secound .counter-number .counter-number,
-  .search-course-secound .counter-number span {
-    color: white;
-  }
-  .counter-number span {
-    font-weight: 700;
-  }
-  .counter-number .counter-count,
-  .counter-number span {
-    font-size: 27px;
-    line-height: -9px;
-    line-height: -9;
-  }
+#hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
 
-  .hvr-sweep-to-right {
-    display: inline-block;
-    margin: 0.4em;
-    padding: 1em;
-    background: #00a859;
-    color: #fff;
-    text-decoration: none;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px transparent;
-    position: relative;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-  }
+.section-title h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 8px 20px;
+  background-color: rgb(231, 241, 253);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-image: none;
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+  color: #da4849;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
 
-  .section-title h3 span {
-    color: #DA4849;
-  }
-  
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.section-title h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-bg {
+  background-color: #f6f9fe;
+}
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.search-course-secound {
+  padding: 20px 0px 10px !important;
+  max-width: 1240px;
+  margin: 0 auto;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  top: -40px;
+}
+
+.StleyIcomMenu {
+  font-size: 38px;
+  color: white;
+}
+
+.search-course-secound .counter-number p {
+  color: white;
+  margin: 0;
+}
+
+.counter-number p {
+  font-size: 14px !important;
+  font-weight: 700;
+}
+
+.counter-icon {
+  float: left;
+  width: 60px;
+  height: 45px;
+  line-height: 40px;
+  margin-right: 15px;
+  text-align: center;
+  border-right: 1px solid white;
+}
+
+.search-course-secound .counter-number .counter-number,
+.search-course-secound .counter-number span {
+  color: white;
+}
+
+.counter-number span {
+  font-weight: 700;
+}
+
+.counter-number .counter-count,
+.counter-number span {
+  font-size: 27px;
+  line-height: -9px;
+  line-height: -9;
+}
+
+.hvr-sweep-to-right {
+  display: inline-block;
+  margin: 0.4em;
+  padding: 1em;
+  background: #00a859;
+  color: #fff;
+  text-decoration: none;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.section-title h3 span {
+  color: #DA4849;
+}
+
+/* customize the second menu */
+
+.featured-services .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  background: #FFF;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.featured-services .icon {
+  margin-bottom: 15px;
+}
+
+
+.featured-services .icon i {
+  font-size: 49px;
+  line-height: 1;
+}
+
+
+.featured-services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #000000;
+}
+
+.featured-services .title a {
+  color: #111;
+}
+

@@ -1,15 +1,11 @@
 <template>
   <div class="main">
     <!-- ======= Contato ======= -->
-    <section id="contato">
+    <section id="contato" class="contato">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
             <div class="contact-left-content">
-              <div class="section-title mb-4 text-left">
-                <span class="subtitle text-uppercase"></span>
-                <p></p>
-              </div>
               <div class="contact-address">
                 <div
                   class="contact-address-details d-flex align-items-center mb-3"
@@ -17,57 +13,55 @@
                   <div class="address-icon text-center">
                     <font-awesome-icon
                       icon="fa-solid fa-location-dot"
-                      style="font-size: 3em"
                     />
                   </div>
                   <div class="address-details ms-3">
-                    <p class="mb-0" style="font-size: 20px">
+                    <li class="mb-0">
                       Endereço:VENIDA PEDRO SAMPAIO, Nº 385 DIVINO SALVADOR,
                       CEP: 62130-000
-                    </p>
+                    </li>
                   </div>
                 </div>
+
                 <div
                   class="contact-address-details d-flex align-items-center mb-3"
                 >
                   <div class="address-icon text-center">
-                    <font-awesome-icon
-                      icon="fa-solid fa-envelope"
-                      style="font-size: 3em"
-                    />
+                    <font-awesome-icon icon="fa-solid fa-envelope" />
                   </div>
                   <div class="address-details ms-3">
-                    <p class="mb-0" style="font-size: 20px">
+                    <li class="mb-0">
                       E-Mail: gabinete@meruoca.ce.gov.br
-                    </p>
+                    </li>
                   </div>
                 </div>
+
+                
+
                 <div
                   class="contact-address-details d-flex align-items-center mb-3"
                 >
                   <div class="address-icon text-center">
                     <font-awesome-icon
                       icon="fa-solid fa-phone"
-                      style="font-size: 45px"
                     />
                   </div>
                   <div class="address-details ms-3">
-                    <p class="mb-0" style="font-size: 20px">
+                    <li class="mb-0">
                       Telefone: (88) 3649-1136
-                    </p>
+                    </li>
                   </div>
                 </div>
                 <div class="contact-address-details d-flex align-items-center">
                   <div class="address-icon text-center">
                     <font-awesome-icon
                       icon="fa-solid fa-check"
-                      style="font-size: 45px"
                     />
                   </div>
                   <div class="address-details ms-3">
-                    <p class="mb-0" style="font-size: 20px">
+                    <li class="mb-0">
                       CNPJ: 07.598.683/0001-70
-                    </p>
+                    </li>
                   </div>
                 </div>
               </div>
@@ -107,8 +101,6 @@
       </footer>
       <!-- End Footer -->
     </div>
-
-
   </div>
 </template>
 
@@ -122,14 +114,61 @@ export default {
 
 
 <style>
+
+.contact-address-details {
+  width: 100%;
+  margin-bottom: 15px;
+  padding-bottom: 25px;
+  display: inline-block;
+  border-bottom: 1px solid #fff;
+}
+
+
 #contato {
-    background-image: url(../assets/cidade.jpg);
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: multiply;
-    color: white;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  </style>
+  background-image: url(../assets/cidade.jpg);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  color: white;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.address-icon {
+  height: 60px;
+  width: 60px;
+  border: 5px solid;
+  line-height: 50px;
+  margin-right: 20px;
+  border: 4px solid transparent;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  -webkit-border-image: -webkit-linear-gradient(21deg, #fff, #fff);
+  -o-border-image: -o-linear-gradient(21deg, #fff, #fff);
+  border-image: linear-gradient(69deg, #fff, #fff);
+  border-image-slice: 100%;
+  border-image-slice: 1;
+  border-radius: 40px;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.address-icon font-awesome-icon {
+  font-size: 30px;
+  color: #FFF;
+}
+
+.address-details li {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+</style>

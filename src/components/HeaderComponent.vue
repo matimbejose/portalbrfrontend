@@ -343,9 +343,6 @@ export default {
   data() {
     return {
       dados: {},
-      dropdown1: false,
-      dropdown2: false,
-      dropdown3: false,
     };
   },
 

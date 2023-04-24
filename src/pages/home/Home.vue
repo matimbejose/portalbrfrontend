@@ -5,10 +5,10 @@
     <section id="hero" class="d-flex align-items-center">
       <div class="container">
         <h1 class="text-center" style="margin-top: 100px">
-          Bem vindo ao portal da 
-          </h1>
+          Bem vindo ao portal da
+        </h1>
         <h1 class="text-center" style="margin-bottom: 70px">
-         {{ dados.fantasia }}
+          {{ dados.fantasia }}
         </h1>
         <center>
           <div class="col-sm-6">
@@ -78,7 +78,7 @@
             </div>
             <!-- /counter -->
 
-            <!-- /counter -->                                                                             
+            <!-- /counter -->
 
             <div class="col-sm-2">
               <div class="counter-icon-number">
@@ -133,49 +133,63 @@
     <!--End /Menu População -->
 
     <!-- ======= MENUS ======= -->
-<section id="menu" class="featured-services" style="padding: 20px 0 60px 0;">
-        <div class="container aos-init aos-animate" data-aos="fade-up">
-            <div class="container">
-                <center>
-                    <div class="row">
-                        <div class="col-6 col-sm">
-                            <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-
-                                <div class="icon"><i class="bi bi-info-circle-fill"></i></div>
-                                <h3 class="title"><a href="">Portal da Transparência</a></h3>
-
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm">
-
-                            <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                                <div class="icon"><i class="bi bi-cash-coin"></i></div>
-                                <h4 class="title"><a href=""> Gestão Fiscal LRF</a></h4>
-                            </div>
-
-                        </div>
-                        <div class=" col-6 col-sm">
-
-                            <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                                <div class="icon"><i class="bi bi-chat-fill"></i></div>
-                                <h2 class="title"><a href="">Ouvidoria Municipal </a></h2>
-                            </div>
-
-                        </div>
-                        <div class="col-6 col-sm">
-
-                            <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
-                                <div class="icon"><i class="bi bi-info"></i></div>
-                                <h4 class="title"><a href="">Acesso a Informação </a></h4>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </center>
+    <section id="menu" class="featured-services" style="padding: 20px 0 60px 0">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="container">
+          <center>
+            <div class="row">
+              <div class="col-6 col-sm">
+                <div
+                  class="icon-box aos-init aos-animate"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <div class="icon">
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="title"><a href="">Portal da Transparência</a></h3>
+                </div>
+              </div>
+              <div class="col-6 col-sm">
+                <div
+                  class="icon-box aos-init aos-animate"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <div class="icon">
+                    <i class="fa fa-money" aria-hidden="true"></i>
+                  </div>
+                  <h4 class="title"><a href=""> Gestão Fiscal LRF</a></h4>
+                </div>
+              </div>
+              <div class="col-6 col-sm">
+                <div
+                  class="icon-box aos-init aos-animate"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <div class="icon">
+                    <i class="fa fa-volume-up" aria-hidden="true"></i>
+                  </div>
+                  <h2 class="title"><a href="">Ouvidoria Municipal </a></h2>
+                </div>
+              </div>
+              <div class="col-6 col-sm">
+                <div
+                  class="icon-box aos-init aos-animate"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <div class="icon">
+                    <i class="fa fa-info" aria-hidden="true"></i> 
+                  </div>
+                  <h4 class="title"><a href="">Acesso a Informação </a></h4>
+                </div>
+              </div>
             </div>
+          </center>
         </div>
-        
+      </div>
     </section>
     <!-- /MENUS -->
 
@@ -1437,8 +1451,8 @@
 
 <script>
 import axios from "axios";
-import HeaderComponentVue from '../../components/HeaderComponent.vue';
-import FooterComponentVue from '../../components/FooterComponent.vue';
+import HeaderComponentVue from "../../components/HeaderComponent.vue";
+import FooterComponentVue from "../../components/FooterComponent.vue";
 
 export default {
   name: "Home",
@@ -1460,7 +1474,7 @@ export default {
           "https://itransparencia.com.br/v2/entidade/?url=http://camarameruoca.ce.gov.br"
         )
         .then((response) => {
-         this.dados = response.data
+          this.dados = response.data;
         })
         .catch((error) => {
           console.log(error);
@@ -1470,14 +1484,11 @@ export default {
 
   mounted() {
     this.loadDate();
-    
   },
-
-
 };
 </script>
 
 
 <style lang="css">
-@import url('Style.css');
+@import url("Style.css");
 </style>
