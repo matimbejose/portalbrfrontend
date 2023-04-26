@@ -1,22 +1,22 @@
 <template>
   <div class="main">
     <!-- ======= Contato ======= -->
-    <section id="contato" class="contato">
+    <section id="contato" class="contato" style="padding: 30px 0px 30px">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
             <div class="contact-left-content">
               <div class="contact-address">
-                
                 <div
                   class="contact-address-details d-flex align-items-center mb-3"
                 >
                   <div class="address-icon text-center">
                     <font-awesome-icon
+                      class="IconFooter"
                       icon="fa-solid fa-location-dot"
                     />
                   </div>
-                  <div class="address-details ms-3">
+                  <div class="address-details">
                     <li class="mb-0">
                       Endereço:VENIDA PEDRO SAMPAIO, Nº 385 DIVINO SALVADOR,
                       CEP: 62130-000
@@ -28,41 +28,27 @@
                   class="contact-address-details d-flex align-items-center mb-3"
                 >
                   <div class="address-icon text-center">
-                    <font-awesome-icon icon="fa-solid fa-envelope" />
+                    <font-awesome-icon
+                      class="IconFooter"
+                      icon="fa-solid fa-envelope"
+                    />
                   </div>
-                  <div class="address-details ms-3">
-                    <li class="mb-0">
-                      E-Mail: gabinete@meruoca.ce.gov.br
-                    </li>
+                  <div class="address-details">
+                    <li class="mb-0">E-Mail: gabinete@meruoca.ce.gov.br</li>
                   </div>
                 </div>
-
-                
 
                 <div
                   class="contact-address-details d-flex align-items-center mb-3"
                 >
                   <div class="address-icon text-center">
                     <font-awesome-icon
+                      class="IconFooter"
                       icon="fa-solid fa-phone"
                     />
                   </div>
-                  <div class="address-details ms-3">
-                    <li class="mb-0">
-                      Telefone: (88) 3649-1136
-                    </li>
-                  </div>
-                </div>
-                <div class="contact-address-details d-flex align-items-center">
-                  <div class="address-icon text-center">
-                    <font-awesome-icon
-                      icon="fa-solid fa-check"
-                    />
-                  </div>
-                  <div class="address-details ms-3">
-                    <li class="mb-0">
-                      CNPJ: 07.598.683/0001-70
-                    </li>
+                  <div class="address-details">
+                    <li class="mb-0">Telefone: (88) 3649-1136</li>
                   </div>
                 </div>
               </div>
@@ -80,7 +66,6 @@
               ></iframe>
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -121,6 +106,20 @@ export default {
   flex: 0 0 auto;
   width: 50%;
 }
+
+#contato .container {
+  position: relative;
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
 .contact-address-details {
   width: 100%;
   margin-bottom: 15px;
@@ -128,7 +127,6 @@ export default {
   display: inline-block;
   border-bottom: 1px solid #fff;
 }
-
 
 #contato {
   background-image: url(../assets/cidade.jpg);
@@ -141,44 +139,18 @@ export default {
   background-attachment: fixed;
 }
 
-.address-icon {
-  height: 60px;
-  width: 60px;
-  border: 5px solid;
-  line-height: 50px;
-  margin-right: 20px;
-  border: 4px solid transparent;
-  border-image-outset: 0;
-  border-image-repeat: stretch;
-  border-image-slice: 100%;
-  border-image-source: none;
-  border-image-width: 1;
-  -webkit-border-image: -webkit-linear-gradient(21deg, #fff, #fff);
-  -o-border-image: -o-linear-gradient(21deg, #fff, #fff);
-  border-image: linear-gradient(69deg, #fff, #fff);
-  border-image-slice: 100%;
-  border-image-slice: 1;
-  border-radius: 40px;
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-}
-
 .text-center {
   text-align: center !important;
 }
 
-.address-icon font-awesome-icon {
-  font-size: 30px;
-  color: #FFF;
-}
-
 .address-details li {
   font-size: 20px;
-  font-weight: 500;
   color: #fff;
   display: block;
-  list-style: none;
 }
 
-
+.IconFooter {
+  font-size: 30px;
+  padding-right: 10px;
+}
 </style>
