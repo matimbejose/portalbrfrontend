@@ -240,3 +240,12 @@ a.btn.btn-success.d-block:hover {
   background-position: left bottom;
 }
 
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color:#DA4849;
+}

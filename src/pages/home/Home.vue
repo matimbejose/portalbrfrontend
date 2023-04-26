@@ -1,11 +1,6 @@
 <template>
   <div class="main">
-
-    <div class="overlay" v-if="isLoading">
-      <SpinnerComponentVue />
-    </div>
-
-    <div class="content" v-else>
+    <div class="content" v-if="isLoading">
       <HeaderComponentVue />
       <!-- ======= Imagem Principal ======= -->
       <section id="hero" class="d-flex align-items-center">
@@ -1493,6 +1488,10 @@
 
       <FooterComponentVue />
     </div>
+    <div class="overlay" v-else>
+      <SpinnerComponentVue />
+    </div>
+
   </div>
 </template>
 
@@ -1513,7 +1512,7 @@ export default {
 
   data() {
     return {
-      isLoading: false,
+      isLoading: true,
       dados: {},
     };
   },
@@ -1526,16 +1525,18 @@ export default {
         )
         .then((response) => {
           this.dados = response.data;
+          this.isLoading = true;
         })
         .catch((error) => {
           console.log(error);
+          this.isLoading = true;
         });
     },
   },
 
   mounted() {
     this.loadDate();
-    this.isLoading = true;
+    this.isLoading = false;
   },
 };
 </script>
