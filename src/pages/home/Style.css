@@ -7,7 +7,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 600px;
+  height: 500px;
 }
 
 
@@ -75,15 +75,12 @@ section {
   top: -40px;
 }
 
+/* //menu */
 .StleyIcomMenu {
   font-size: 38px;
   color: white;
 }
 
-.search-course-secound .counter-number p {
-  color: white;
-  margin: 0;
-}
 
 .counter-number p {
   font-size: 14px !important;
@@ -106,15 +103,26 @@ section {
 }
 
 .counter-number span {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 .counter-number .counter-count,
 .counter-number span {
-  font-size: 27px;
+  font-size: 28px;
   line-height: -9px;
   line-height: -9;
 }
+
+
+
+
+
+
+.search-course-secound .counter-number p {
+  color: white;
+  margin: 0;
+}
+
 
 .hvr-sweep-to-right {
   display: inline-block;
@@ -172,3 +180,30 @@ section {
   color: #111;
 }
 
+.icon-box {
+  position: relative;
+}
+
+.icon-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #DA4849;
+  z-index: -1;
+  transition: transform 0.2s ease-out;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+
+.icon-box:hover::after {
+  transform: scaleY(1);
+}
+
+
+.icon-box:hover .icon i,
+.icon-box:hover .title a {
+  color: white;
+}

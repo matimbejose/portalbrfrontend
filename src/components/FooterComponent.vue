@@ -7,6 +7,7 @@
           <div class="col-md-6">
             <div class="contact-left-content">
               <div class="contact-address">
+                
                 <div
                   class="contact-address-details d-flex align-items-center mb-3"
                 >
@@ -67,6 +68,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-md-6">
             <div class="embed-responsive embed-responsive-16by9">
               <iframe
@@ -78,6 +80,7 @@
               ></iframe>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -114,7 +117,10 @@ export default {
 
 
 <style>
-
+.col-md-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
 .contact-address-details {
   width: 100%;
   margin-bottom: 15px;
@@ -170,5 +176,9 @@ export default {
   font-size: 20px;
   font-weight: 500;
   color: #fff;
+  display: block;
+  list-style: none;
 }
+
+
 </style>

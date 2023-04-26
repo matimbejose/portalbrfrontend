@@ -97,9 +97,7 @@
               </ul>
             </li>
 
-            <li
-              class="nav-item dropdown"
-            >
+            <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -359,7 +357,6 @@ export default {
           console.log(error);
         });
     },
-
   },
 
   mounted() {
@@ -370,11 +367,9 @@ export default {
 
 
 <style>
-
 /* customize the drop down menu */
 .dropdown:hover .dropdown-menu {
-  display: block ;
-
+  display: block;
 }
 /* customize the  nav bar */
 #navabar {
@@ -439,4 +434,39 @@ export default {
 .navbar li:hover > a {
   color: #da4849;
 }
+
+
+/* trocou as fontes da navBar para bold */
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  position: relative;
+}
+
+
+.navbar .dropdown ul a {
+
+    padding: 10px 20px;
+    font-weight: 400;
+
+}
+
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #444444;
+  white-space: nowrap;
+  transition: 0.3s;
+  position: relative;
+}
+
 </style>

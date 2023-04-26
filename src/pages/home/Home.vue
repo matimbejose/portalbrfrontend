@@ -4,7 +4,7 @@
     <!-- ======= Imagem Principal ======= -->
     <section id="hero" class="d-flex align-items-center">
       <div class="container">
-        <h1 class="text-center" style="margin-top: 100px">
+        <h1 class="text-center" style="margin-top: 80px">
           Bem vindo ao portal da
         </h1>
         <h1 class="text-center" style="margin-bottom: 70px">
@@ -24,7 +24,7 @@
                 <button
                   type="button"
                   class="btn btn-success btn-lg btn-block"
-                  style="padding: 15px; border-radius: 0px"
+                  style="padding: 10px; border-radius: 0px"
                 >
                   Pesquisar
                 </button>
@@ -181,7 +181,7 @@
                   data-aos-delay="400"
                 >
                   <div class="icon">
-                    <i class="fa fa-info" aria-hidden="true"></i> 
+                    <i class="fa fa-info" aria-hidden="true"></i>
                   </div>
                   <h4 class="title"><a href="">Acesso a Informação </a></h4>
                 </div>
@@ -326,7 +326,11 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="btn btn-success d-block w-100 mb-3">
+            <a
+              href="#"
+              class="btn btn-success d-block w-100 mb-3"
+              style="padding: 15px"
+            >
               <font-awesome-icon :icon="['fas', 'newspaper']" /> Ver todas as
               Notícias
             </a>
@@ -387,7 +391,11 @@
             </div>
           </div>
           <div class="col-md-12">
-            <a href="#" class="btn btn-success d-block w-100 mb-3">
+            <a
+              href="#"
+              class="btn btn-success d-block w-100 mb-3"
+              style="padding: 15px"
+            >
               <font-awesome-icon :icon="['fas', 'video']" /> Ver todos os Videos
             </a>
           </div>
@@ -678,7 +686,7 @@
                 <div class="col-md-12">
                   <a href="#" class="btn btn-success d-block w-100 mb-3">
                     <font-awesome-icon icon="fa-solid fa-file-circle-plus" />
-                    Ver todos os Videos
+                    Ver todas as LRF
                   </a>
                 </div>
               </div>
