@@ -58,7 +58,7 @@
       class="navbar navbar-expand-lg navbar-white bg-white static-top sticky-top"
     >
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a @click.prevent="goToHome()" class="navbar-brand" href="#">
           <img :src="dados.logotipo" alt="logo" height="70" />
         </a>
         <button
@@ -278,7 +278,7 @@
                 aria-labelledby="navbarDropdown"
               >
                 <li><a class="dropdown-item" href="#">LEIS</a></li>
-                <li><a class="dropdown-item" href="#">LICITAÇÃO</a></li>
+                <li><a @click.prevent="goToLicitacoes()" class="dropdown-item" href="#">LICITAÇÃO</a></li>
                 <li></li>
                 <li>
                   <a class="dropdown-item" href="#">LRF CONTAS PÚBLICAS</a>
@@ -357,6 +357,12 @@ export default {
           console.log(error);
         });
     },
+    goToLicitacoes() {
+      this.$router.push('/licitacoes')
+    },
+      goToHome() {
+      this.$router.push('/')
+    }
   },
 
   mounted() {

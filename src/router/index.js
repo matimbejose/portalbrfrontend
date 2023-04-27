@@ -8,8 +8,9 @@ const routes = [
     component: Home
   },
   {
-    
-  }
+    path: '/licitacoes',
+    name: 'bids',
+    component: () => import('../pages/bids/Bids.vue')  }
 ]
 
 
