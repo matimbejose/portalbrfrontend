@@ -1,10 +1,60 @@
-.team {
-    padding: 60px 0;
-  }
+
+.featured-services {
+  margin-top: 100px;
+}
+
+.team .member {
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #FFF;
+  box-shadow: 0px 2px 15px rgba(16, 110, 234, 0.15);
+}
+
+.team .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
 
 
-  .featured-services {
-    margin-top: 100px;
-  }
+.team .member .social {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  text-align: center;
+}
+
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  font-size: 18px;
+  color: #222222;
+}
 
 
+.text-center {
+  text-align: center !important;
+}
+
+
+
+.team .member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
