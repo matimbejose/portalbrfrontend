@@ -1,6 +1,9 @@
 <template>
   <div class="content">
     <HeaderComponentVue />
+
+    <!-- <BreadcrumbComponentVue class="row justify-content-center mt-4" :crumbs="crumbs" @selected="selected" /> -->
+
     <!-- ======= PRIMEIRO BLOCO DE MENUS  =======  -->
     <section id="menu" class="featured-services" style="padding: 60px 0 30px 0">
       <div class="container aos-init aos-animate" data-aos="fade-up">
@@ -156,10 +159,7 @@
             <div
               class="testimonials-slider swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden"
             >
-              <div
-                class="swiper-wrapper"
-                aria-live="off"
-              >
+              <div class="swiper-wrapper" aria-live="off">
                 <div
                   class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev"
                   data-swiper-slide-index="0"
@@ -580,8 +580,9 @@
                 <span class="text-center"
                   >Presidente da comissão de licitação</span
                 >
-                <span class="text-center"
-                  ><i class="bi bi-calendar3"></i> 14/07/2022
+                <span class="text-center">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                  14/07/2022
                 </span>
               </div>
             </div>
@@ -607,7 +608,7 @@
                 <h4 class="text-center">ANA CAROLINE AGUIAR CAVALCANTE</h4>
                 <span class="text-center">Membro da comissão de licitação</span>
                 <span class="text-center"
-                  ><i class="bi bi-calendar3"></i> 14/07/2022
+                  ><i class="fa fa-calendar" aria-hidden="true"></i>14/07/2022
                 </span>
               </div>
             </div>
@@ -633,7 +634,7 @@
                 <h4 class="text-center">HERICA ALVES MARCIEL</h4>
                 <span class="text-center">Membro da comissão de licitação</span>
                 <span class="text-center"
-                  ><i class="bi bi-calendar3"></i> 14/07/2022
+                  ><i class="fa fa-calendar" aria-hidden="true"></i> 14/07/2022
                 </span>
               </div>
             </div>
@@ -659,7 +660,7 @@
                 <h4 class="text-center">HERICA ALVES MARCIEL</h4>
                 <span class="text-center">Membro da comissão de licitação</span>
                 <span class="text-center"
-                  ><i class="bi bi-calendar3"></i> 14/07/2022
+                  ><i class="fa fa-calendar" aria-hidden="true"></i> 14/07/2022
                 </span>
               </div>
             </div>
@@ -705,6 +706,8 @@
                 width="500"
                 height="500"
               ></canvas>
+
+              
             </center>
           </div>
 
@@ -724,8 +727,8 @@
                           href="#faq1"
                         >
                           O que é licitação?
-                          <i class="bi bi-chevron-down icon-show"></i
-                          ><i class="bi bi-chevron-up icon-close"></i>
+                          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                          <i class="fa fa-chevron-up" aria-hidden="true"></i>
                         </div>
                         <div
                           id="faq1"
@@ -755,8 +758,8 @@
                           class="collapsed question"
                         >
                           Porque fazer licitação?
-                          <i class="bi bi-chevron-down icon-show"></i
-                          ><i class="bi bi-chevron-up icon-close"></i>
+                          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                          <i class="fa fa-chevron-up" aria-hidden="true"></i>
                         </div>
                         <div
                           id="faq2"
@@ -781,8 +784,8 @@
                           class="collapsed question"
                         >
                           Quais leis regulamentam?
-                          <i class="bi bi-chevron-down icon-show"></i
-                          ><i class="bi bi-chevron-up icon-close"></i>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                          <i class="fa fa-chevron-up" aria-hidden="true"></i>
                         </div>
                         <div
                           id="faq3"
@@ -807,8 +810,8 @@
                           class="collapsed question"
                         >
                           Quem precisa fazer licitação?
-                          <i class="bi bi-chevron-down icon-show"></i
-                          ><i class="bi bi-chevron-up icon-close"></i>
+                          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                          <i class="fa fa-chevron-up" aria-hidden="true"></i>
                         </div>
                         <div
                           id="faq4"
@@ -833,8 +836,8 @@
                           class="collapsed question"
                         >
                           Quem pode vender para o setor público?
-                          <i class="bi bi-chevron-down icon-show"></i
-                          ><i class="bi bi-chevron-up icon-close"></i>
+                          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                          <i class="fa fa-chevron-up" aria-hidden="true"></i>
                         </div>
                         <div
                           id="faq5"
@@ -875,19 +878,27 @@
 
 
 <script>
+import BreadcrumbComponentVue from "../../components/BreadcrumbComponent.vue";
 import FooterComponentVue from "../../components/FooterComponent.vue";
 import HeaderComponentVue from "../../components/HeaderComponent.vue";
-FooterComponentVue;
-
 export default {
   name: "Bids",
   components: {
     HeaderComponentVue,
     FooterComponentVue,
+    BreadcrumbComponentVue,
   },
 
-  data() {},
-  methods: {},
+  data() {
+    return {
+      crumbs: ["Home", "Category", "Sub  category"],
+    };
+  },
+  methods: {
+    selected(crumb) {
+      console.log(crumb);
+    },
+  },
 
   mounted() {},
 };

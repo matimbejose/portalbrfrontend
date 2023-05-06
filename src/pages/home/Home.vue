@@ -1542,6 +1542,6 @@ export default {
 </script>
 
 
-<style lang="css">
+<style>
 @import url("Style.css");
 </style>
