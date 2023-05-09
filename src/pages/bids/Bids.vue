@@ -834,10 +834,10 @@
                           >
                             Quem precisa fazer licitação?
                             <i
-                              class="fa fa-chevron-down"
+                              class="fa fa-chevron-down icon-show"
                               aria-hidden="true"
                             ></i>
-                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                            <i class="fa fa-chevron-up  icon-close" aria-hidden="true"></i>
                           </div>
                           <div
                             id="faq4"
@@ -912,6 +912,7 @@
 import ChartComponentVue from "../../components/ChartComponent.vue";
 import FooterComponentVue from "../../components/FooterComponent.vue";
 import HeaderComponentVue from "../../components/HeaderComponent.vue";
+
 
 export default {
   name: "",
