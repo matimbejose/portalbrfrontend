@@ -53,10 +53,7 @@
   color: #aaaaaa;
 }
 
-img,
-svg {
-  vertical-align: middle;
-}
+
 
 .featured-services .icon-box:hover .icon i {
   color: #FFF;
@@ -84,10 +81,6 @@ svg {
 }
 
 
-.faq .faq-list .collapsed {
-  color: black;
-}
-
 
 
 
@@ -107,13 +100,6 @@ svg {
 .collapse:not(.show) {
   display: none;
 }
-
-
-.faq .faq-list .collapsed .icon-show {
-  display: inline-block;
-  transition: 0.6s;
-}
-
 
 .faq .faq-list {
   padding: 0;
@@ -142,8 +128,6 @@ ul {
 .faq .faq-list .collapsed:hover {
   color: #DA4849;
 }
-
-
 
 .swiper {
   margin-left: auto;
@@ -205,17 +189,6 @@ ul {
   color: black;
 }
 
-.faq .faq-list .collapsed .icon-show {
-  display: inline-block;
-  transition: 0.6s;
-}
-
-
-.faq .faq-list .collapsed .icon-close {
-  display: none;
-  transition: 0.6s;
-}
-
 
 .faq .faq-list .collapsed .icon-show {
   display: inline-block;
@@ -229,24 +202,3 @@ ul {
 
 
 
-.hvr-sweep-to-right::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 10px;
-  background: #DA4849;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: 0 50%;
-  transform-origin: 0 50%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}

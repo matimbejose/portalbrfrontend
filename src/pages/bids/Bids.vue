@@ -742,10 +742,10 @@
                           >
                             O que é licitação?
                             <i
-                              class="fa fa-chevron-down"
+                              class="fa fa-chevron-down icon-show"
                               aria-hidden="true"
                             ></i>
-                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                            <i class="fa fa-chevron-up icon-close" aria-hidden="true"></i>
                           </div>
                           <div
                             id="faq1"
