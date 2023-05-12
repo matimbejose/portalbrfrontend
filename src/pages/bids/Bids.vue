@@ -166,7 +166,13 @@
               <div
                 class="testimonials-slider swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden"
               >
-                <div class="swiper-wrapper" style="transition-duration: 600ms; transform: translate3d(-880px, 0px, 0px);">
+                <div
+                  class="swiper-wrapper"
+                  style="
+                    transition-duration: 600ms;
+                    transform: translate3d(-880px, 0px, 0px);
+                  "
+                >
                   <div
                     class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev"
                     data-swiper-slide-index="0"
@@ -332,13 +338,16 @@
                     </a>
                   </div>
                 </div>
+
                 <a
                   href="/licitacaolista"
-                  class="button hvr-sweep-to-right rounded float-start text-center"
+                  class="btn btn-success d-block w-100 mb-3"
                   style="padding: 10px 0px; font-size: 14px; width: 98%"
-                  ><i class="bi bi-file-earmark-plus-fill"></i> Ver todos os
-                  Avisos</a
                 >
+                  <font-awesome-icon icon="fa-solid fa-file-circle-plus" /> Ver
+                  todos os Avisos</a
+                >
+
                 <span
                   class="swiper-notification"
                   aria-live="assertive"
@@ -539,12 +548,14 @@
                         </div>
                       </div>
                     </a>
+
                     <a
                       href="/dispensaeinexigibilidade"
-                      class="button hvr-sweep-to-right rounded float-start text-center"
+                      class="btn btn-success d-block w-100 mb-3"
                       style="padding: 10px 0px; font-size: 14px; width: 99%"
-                      ><i class="bi bi-file-earmark-plus-fill"></i> Ver todas as
-                      Dispensas</a
+                    >
+                      <font-awesome-icon icon="fa-solid fa-file-circle-plus" />
+                      Ver todas as Dispensas</a
                     >
                   </div>
                 </div>
@@ -745,7 +756,10 @@
                               class="fa fa-chevron-down icon-show"
                               aria-hidden="true"
                             ></i>
-                            <i class="fa fa-chevron-up icon-close" aria-hidden="true"></i>
+                            <i
+                              class="fa fa-chevron-up icon-close"
+                              aria-hidden="true"
+                            ></i>
                           </div>
                           <div
                             id="faq1"
@@ -776,10 +790,13 @@
                           >
                             Porque fazer licitação?
                             <i
-                              class="fa fa-chevron-down"
+                              class="fa fa-chevron-down icon-show"
                               aria-hidden="true"
                             ></i>
-                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                            <i
+                              class="fa fa-chevron-up icon-close"
+                              aria-hidden="true"
+                            ></i>
                           </div>
                           <div
                             id="faq2"
@@ -805,10 +822,13 @@
                           >
                             Quais leis regulamentam?
                             <i
-                              class="fa fa-chevron-down"
+                              class="fa fa-chevron-down icon-show"
                               aria-hidden="true"
                             ></i>
-                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                            <i
+                              class="fa fa-chevron-up icon-close"
+                              aria-hidden="true"
+                            ></i>
                           </div>
                           <div
                             id="faq3"
@@ -837,7 +857,10 @@
                               class="fa fa-chevron-down icon-show"
                               aria-hidden="true"
                             ></i>
-                            <i class="fa fa-chevron-up  icon-close" aria-hidden="true"></i>
+                            <i
+                              class="fa fa-chevron-up icon-close"
+                              aria-hidden="true"
+                            ></i>
                           </div>
                           <div
                             id="faq4"
@@ -864,10 +887,13 @@
                           >
                             Quem pode vender para o setor público?
                             <i
-                              class="fa fa-chevron-down"
+                              class="fa fa-chevron-down icon-show"
                               aria-hidden="true"
                             ></i>
-                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                            <i
+                              class="fa fa-chevron-up icon-close"
+                              aria-hidden="true"
+                            ></i>
                           </div>
                           <div
                             id="faq5"
@@ -887,9 +913,13 @@
 
                       <a
                         href="/licitacaolista"
-                        class="button hvr-sweep-to-right rounded float-start text-center"
+                        class="btn btn-success d-block w-100 mb-3"
                         style="padding: 15px 0px; font-size: 14px; width: 100%"
-                        ><i class="fa fa-gavel"></i> Ver todas as Licitações</a
+                      >
+                        <font-awesome-icon
+                          icon="fa-solid fa-file-circle-plus"
+                        />
+                        Ver todas as Licitações</a
                       >
                     </div>
                   </div>
@@ -913,7 +943,6 @@ import ChartComponentVue from "../../components/ChartComponent.vue";
 import FooterComponentVue from "../../components/FooterComponent.vue";
 import HeaderComponentVue from "../../components/HeaderComponent.vue";
 
-
 export default {
   name: "",
   components: {
@@ -936,6 +965,7 @@ export default {
         values: [450, 200, 100, 10, 10],
         colors: ["#b91d47", "#00aba9", "#2b5797", "#e8c3b9", "#1e7145"],
       },
+      showIcon: false, // Inicializa a variável showIcon como false
     };
   },
 
