@@ -10,7 +10,6 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 
 
-
 /* import specific icons */
 import {
     faUserSecret,
@@ -43,14 +42,13 @@ import {
 
 
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap"
 
 
 /* add icons to the library */
 library.add(faUserSecret, faLocationDot, faEnvelope, faPhone, faCheck, faUsers, faHouse, faMapLocationDot, faCircleExclamation, faMoneyBill, faMessage, faExclamation, faCalendarDays, faNewspaper, faVideo, faFileCirclePlus, faCalendarDay, faCalendarCheck, faMapLocation, faPhone, faVolumeOff, faMobileScreenButton, faSpinner)
 
-
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap"
 
 createApp(App)
     .use(router)

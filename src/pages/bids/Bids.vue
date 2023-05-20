@@ -7,8 +7,10 @@
       <section
         id="menu"
         class="featured-services"
-        style="padding: 60px 0 30px 0"
       >
+      <BreadcrumbComponent  style="margin-bottom: 55px" class="row justify-content-center mt-4" :crumbs="crumbs" @selected="selected" />
+
+
         <div class="container aos-init aos-animate" data-aos="fade-up">
           <div class="container">
             <center>
@@ -750,15 +752,18 @@
                             data-bs-toggle="collapse"
                             class="collapsed question"
                             href="#faq1"
+                            @click="toggleChevron2"
                           >
                             O que é licitação?
                             <i
                               class="fa fa-chevron-down icon-show"
                               aria-hidden="true"
+                              v-bind:class="{ 'd-none': showIcon2 }"
                             ></i>
                             <i
                               class="fa fa-chevron-up icon-close"
                               aria-hidden="true"
+                              v-bind:class="{ 'd-none': !showIcon2 }"
                             ></i>
                           </div>
                           <div
@@ -787,15 +792,18 @@
                             data-bs-toggle="collapse"
                             href="#faq2"
                             class="collapsed question"
+                            @click="toggleChevron1"
                           >
                             Porque fazer licitação?
                             <i
                               class="fa fa-chevron-down icon-show"
                               aria-hidden="true"
+                              v-bind:class="{ 'd-none': showIcon1 }"
                             ></i>
                             <i
                               class="fa fa-chevron-up icon-close"
                               aria-hidden="true"
+                              v-bind:class="{ 'd-none': !showIcon1 }"
                             ></i>
                           </div>
                           <div
@@ -819,15 +827,18 @@
                             data-bs-toggle="collapse"
                             href="#faq3"
                             class="collapsed question"
+                            @click="toggleChevron"
                           >
                             Quais leis regulamentam?
                             <i
                               class="fa fa-chevron-down icon-show"
                               aria-hidden="true"
+                              v-bind:class="{ 'd-none': showIcon }"
                             ></i>
                             <i
                               class="fa fa-chevron-up icon-close"
                               aria-hidden="true"
+                              v-bind:class="{ 'd-none': !showIcon }"
                             ></i>
                           </div>
                           <div
@@ -851,15 +862,18 @@
                             data-bs-toggle="collapse"
                             href="#faq4"
                             class="collapsed question"
+                            @click="toggleChevron3"
                           >
                             Quem precisa fazer licitação?
                             <i
                               class="fa fa-chevron-down icon-show"
                               aria-hidden="true"
+                              v-bind:class="{ 'd-none': showIcon3 }"
                             ></i>
                             <i
                               class="fa fa-chevron-up icon-close"
                               aria-hidden="true"
+                              v-bind:class="{ 'd-none': !showIcon3 }"
                             ></i>
                           </div>
                           <div
@@ -884,15 +898,19 @@
                             data-bs-toggle="collapse"
                             href="#faq5"
                             class="collapsed question"
+                             @click="toggleChevron4"
                           >
                             Quem pode vender para o setor público?
                             <i
                               class="fa fa-chevron-down icon-show"
                               aria-hidden="true"
+                                                            v-bind:class="{ 'd-none': showIcon4 }"
+
                             ></i>
                             <i
                               class="fa fa-chevron-up icon-close"
                               aria-hidden="true"
+                                v-bind:class="{ 'd-none': !showIcon4 }"
                             ></i>
                           </div>
                           <div
@@ -939,6 +957,7 @@
 
 
 <script>
+import BreadcrumbComponent from '../../components/BreadcrumbComponent.vue';
 import ChartComponentVue from "../../components/ChartComponent.vue";
 import FooterComponentVue from "../../components/FooterComponent.vue";
 import HeaderComponentVue from "../../components/HeaderComponent.vue";
@@ -949,6 +968,7 @@ export default {
     HeaderComponentVue,
     FooterComponentVue,
     ChartComponentVue,
+    BreadcrumbComponent,
   },
 
   data() {
@@ -966,10 +986,36 @@ export default {
         colors: ["#b91d47", "#00aba9", "#2b5797", "#e8c3b9", "#1e7145"],
       },
       showIcon: false, // Inicializa a variável showIcon como false
+      showIcon1: false, // Inicializa a variável showIcon como false
+      showIcon2: false, // Inicializa a variável showIcon como false
+      showIcon3: false, // Inicializa a variável showIcon como false
+      showIcon4: false, // Inicializa a variável showIcon como false
+      crumbs: ['Home', 'Category','Sub category'],
     };
+
   },
 
-  methods: {},
+  methods: {
+    toggleChevron() {
+      this.showIcon = !this.showIcon;
+    },
+    toggleChevron1() {
+      this.showIcon1 = !this.showIcon1;
+    },
+    toggleChevron2() {
+      this.showIcon2 = !this.showIcon2;
+    },
+    toggleChevron3() {
+      this.showIcon3 = !this.showIcon3;
+    },
+    toggleChevron4() {
+      this.showIcon4 = !this.showIcon4;
+    },
+
+    selected(crumb) {
+      console.log(crumb);
+    },
+  },
 
   mounted() {},
 };
@@ -977,6 +1023,6 @@ export default {
 
 
 
-<style>
-@import url("Style.css");
+<style lang="css" scoped>
+@import url("style.css");
 </style>

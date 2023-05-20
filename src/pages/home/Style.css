@@ -10,7 +10,6 @@
   height: 500px;
 }
 
-
 #hero h1 {
   margin: 0;
   font-size: 48px;
@@ -59,8 +58,6 @@
 .section-bg {
   background-color: #f6f9fe;
 }
-
-
 
 .search-course-secound {
   padding: 20px 0px 10px !important;
@@ -117,7 +114,6 @@
   font-size: 49px;
   line-height: 1;
 }
-
 
 .featured-services .title {
   font-weight: 700;

@@ -2,6 +2,12 @@
   <div class="main">
     <div class="content" v-if="isLoading">
       <HeaderComponentVue />
+      <BreadcrumbComponent
+        class="row justify-content-center mt-4"
+        :crumbs="crumbs"
+        @selected="selected"
+      />
+
       <!-- ======= Imagem Principal ======= -->
       <section id="hero" class="d-flex align-items-center">
         <div class="container">
@@ -54,11 +60,11 @@
                       class="StleyIcomMenu"
                     />
                   </div>
-                     <div class="counter-wrapper">
-                  <div class="counter-number">
-                    <span class="purecounter">13</span><span>.000+</span>
-                    <p>População</p>
-                  </div>
+                  <div class="counter-wrapper">
+                    <div class="counter-number">
+                      <span class="purecounter">13</span><span>.000+</span>
+                      <p>População</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1488,84 +1494,83 @@
       </section>
       <!---- End Publicao de licitações  ---->
 
-          <!-- ======= Contato ======= -->
-    <section id="contato" class="contato" style="padding: 30px 0px 30px">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="contact-left-content">
-              <div class="contact-address">
-                <div
-                  class="contact-address-details d-flex align-items-center mb-3"
-                >
-                  <div class="address-icon text-center">
-                    <font-awesome-icon
-                      class="IconFooter"
-                      icon="fa-solid fa-location-dot"
-                    />
+      <!-- ======= Contato ======= -->
+      <section id="contato" class="contato" style="padding: 30px 0px 30px">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="contact-left-content">
+                <div class="contact-address">
+                  <div
+                    class="contact-address-details d-flex align-items-center mb-3"
+                  >
+                    <div class="address-icon text-center">
+                      <font-awesome-icon
+                        class="IconFooter"
+                        icon="fa-solid fa-location-dot"
+                      />
+                    </div>
+                    <div class="address-details">
+                      <li class="mb-0">
+                        Endereço:VENIDA PEDRO SAMPAIO, Nº 385 DIVINO SALVADOR,
+                        CEP: 62130-000
+                      </li>
+                    </div>
                   </div>
-                  <div class="address-details">
-                    <li class="mb-0">
-                      Endereço:VENIDA PEDRO SAMPAIO, Nº 385 DIVINO SALVADOR,
-                      CEP: 62130-000
-                    </li>
-                  </div>
-                </div>
 
-                <div
-                  class="contact-address-details d-flex align-items-center mb-3"
-                >
-                  <div class="address-icon text-center">
-                    <font-awesome-icon
-                      class="IconFooter"
-                      icon="fa-solid fa-envelope"
-                    />
+                  <div
+                    class="contact-address-details d-flex align-items-center mb-3"
+                  >
+                    <div class="address-icon text-center">
+                      <font-awesome-icon
+                        class="IconFooter"
+                        icon="fa-solid fa-envelope"
+                      />
+                    </div>
+                    <div class="address-details">
+                      <li class="mb-0">E-Mail: gabinete@meruoca.ce.gov.br</li>
+                    </div>
                   </div>
-                  <div class="address-details">
-                    <li class="mb-0">E-Mail: gabinete@meruoca.ce.gov.br</li>
-                  </div>
-                </div>
 
-                <div
-                  class="contact-address-details d-flex align-items-center mb-3"
-                >
-                  <div class="address-icon text-center">
-                    <font-awesome-icon
-                      class="IconFooter"
-                      icon="fa-solid fa-phone"
-                    />
-                  </div>
-                  <div class="address-details">
-                    <li class="mb-0">Telefone: (88) 3649-1136</li>
+                  <div
+                    class="contact-address-details d-flex align-items-center mb-3"
+                  >
+                    <div class="address-icon text-center">
+                      <font-awesome-icon
+                        class="IconFooter"
+                        icon="fa-solid fa-phone"
+                      />
+                    </div>
+                    <div class="address-details">
+                      <li class="mb-0">Telefone: (88) 3649-1136</li>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-6">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe
-                class="img-fluid w-100"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.1908996922366!2d-40.45794497170903!3d-3.5433914349887212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7eae8b5a5960ef5%3A0xfb001c05102a76e1!2sPrefeitura%20Municipal%20de%20Meruoca!5e0!3m2!1spt-BR!2sbr!4v1666897166509!5m2!1spt-BR!2sbr"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+            <div class="col-md-6">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  class="img-fluid w-100"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.1908996922366!2d-40.45794497170903!3d-3.5433914349887212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7eae8b5a5960ef5%3A0xfb001c05102a76e1!2sPrefeitura%20Municipal%20de%20Meruoca!5e0!3m2!1spt-BR!2sbr!4v1666897166509!5m2!1spt-BR!2sbr"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- End Contato -->
+      <!-- End Contato -->
 
       <FooterComponentVue />
     </div>
     <div class="overlay" v-else>
       <SpinnerComponentVue />
     </div>
-
   </div>
 </template>
 
@@ -1616,6 +1621,6 @@ export default {
 </script>
 
 
-<style>
-@import url("Style.css");
+<style lang="css" scoped>
+@import url("style.css");
 </style>
