@@ -32,7 +32,8 @@ import {
     faMapLocation,
     faVolumeOff,
     faMobileScreenButton,
-    faSpinner
+    faSpinner,
+    faSquareCheck
 } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -47,7 +48,7 @@ import "bootstrap"
 
 
 /* add icons to the library */
-library.add(faUserSecret, faLocationDot, faEnvelope, faPhone, faCheck, faUsers, faHouse, faMapLocationDot, faCircleExclamation, faMoneyBill, faMessage, faExclamation, faCalendarDays, faNewspaper, faVideo, faFileCirclePlus, faCalendarDay, faCalendarCheck, faMapLocation, faPhone, faVolumeOff, faMobileScreenButton, faSpinner)
+library.add(faUserSecret, faLocationDot, faEnvelope, faPhone, faCheck, faUsers, faHouse, faMapLocationDot, faCircleExclamation, faMoneyBill, faMessage, faExclamation, faCalendarDays, faNewspaper, faVideo, faFileCirclePlus, faCalendarDay, faCalendarCheck, faMapLocation, faPhone, faVolumeOff, faMobileScreenButton, faSpinner,faSquareCheck)
 
 
 createApp(App)

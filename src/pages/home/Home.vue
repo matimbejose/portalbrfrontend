@@ -907,6 +907,7 @@
                         width: 98%;
                         margintop: 10px;
                       "
+                      @click.prevent="goToLicitacoes()"
                     >
                       <font-awesome-icon :icon="['fas', 'newspaper']" /> Ver
                       todas as Licitações
@@ -1094,6 +1095,7 @@
                         width: 98%;
                         margintop: 10px;
                       "
+                      @click.prevent="goToLicitacoes()"
                     >
                       <font-awesome-icon :icon="['fas', 'newspaper']" /> Ver
                       todas as Licitações
@@ -1297,6 +1299,7 @@
                           width: 98%;
                           margintop: 10px;
                         "
+                        @click.prevent="goToLicitacoes()"
                       >
                         <font-awesome-icon :icon="['fas', 'newspaper']" /> Ver
                         todas as Licitações
@@ -1480,6 +1483,7 @@
                           width: 98%;
                           margintop: 10px;
                         "
+                        @click.prevent="goToLicitacoes()"
                       >
                         <font-awesome-icon :icon="['fas', 'newspaper']" /> Ver
                         todas as Licitações
@@ -1543,6 +1547,20 @@
                     </div>
                     <div class="address-details">
                       <li class="mb-0">Telefone: (88) 3649-1136</li>
+                    </div>
+                  </div>
+
+                  <div
+                    class="contact-address-details d-flex align-items-center mb-3"
+                  >
+                    <div class="address-icon text-center">
+                      <font-awesome-icon
+                        class="IconFooter"
+                        icon="fa-solid fa-square-check"
+                      />
+                    </div>
+                    <div class="address-details">
+                      <li class="mb-0">CNPJ: 07.598.683/0001-70</li>
                     </div>
                   </div>
                 </div>
@@ -1610,6 +1628,9 @@ export default {
           console.log(error);
           this.isLoading = true;
         });
+    },
+    goToLicitacoes() {
+      this.$router.push("/licitacoes");
     },
   },
 
