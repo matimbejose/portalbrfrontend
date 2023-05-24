@@ -59,7 +59,8 @@
     >
       <div class="container">
         <a @click.prevent="goToHome()" class="navbar-brand" href="#">
-          <img :src="dados.logotipo" alt="logo" height="70" />
+          <!-- <img :src="dados.logotipo" alt="logo" height="70" /> -->
+          <img src="../assets/logo.png" alt="logo" height="70" />
         </a>
         <button
           class="navbar-toggler"

@@ -44,8 +44,6 @@
   text-align: center !important;
 }
 
-
-
 .team .member .member-info span {
   display: block;
   font-size: 13px;
@@ -68,7 +66,9 @@
 }
 
 
-.featured-services .icon-box:hover .title a, .featured-services .icon-box:hover .description, .featured-services .icon-box:hover .title {
+.featured-services .icon-box:hover .title a,
+.featured-services .icon-box:hover .description,
+.featured-services .icon-box:hover .title {
   color: #fff;
 }
 
@@ -235,4 +235,13 @@ ul {
 
 .d-none {
   display: none;
+}
+
+
+
+@media (min-width: 768px) {
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
 }

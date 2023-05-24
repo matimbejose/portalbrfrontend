@@ -4,12 +4,13 @@
       <HeaderComponentVue />
 
       <!-- ======= PRIMEIRO BLOCO DE MENUS  =======  -->
-      <section
-        id="menu"
-        class="featured-services"
-      >
-      <BreadcrumbComponent  style="margin-bottom: 55px" class="row justify-content-center mt-4" :crumbs="crumbs" @selected="selected" />
-
+      <section id="menu" class="featured-services">
+        <BreadcrumbComponent
+          style="margin-bottom: 55px"
+          class="row justify-content-center mt-4"
+          :crumbs="crumbs"
+          @selected="selected"
+        />
 
         <div class="container aos-init aos-animate" data-aos="fade-up">
           <div class="container">
@@ -168,13 +169,7 @@
               <div
                 class="testimonials-slider swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden"
               >
-                <div
-                  class="swiper-wrapper"
-                  style="
-                    transition-duration: 600ms;
-                    transform: translate3d(-880px, 0px, 0px);
-                  "
-                >
+                <div class="swiper-wrapper" ref="myElement">
                   <div
                     class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev"
                     data-swiper-slide-index="0"
@@ -566,7 +561,6 @@
           </div>
         </div>
       </section>
-
       <!-- /Aviso de Licitação  -->
 
       <!-- ======= Comissões =======  -->
@@ -898,19 +892,18 @@
                             data-bs-toggle="collapse"
                             href="#faq5"
                             class="collapsed question"
-                             @click="toggleChevron4"
+                            @click="toggleChevron4"
                           >
                             Quem pode vender para o setor público?
                             <i
                               class="fa fa-chevron-down icon-show"
                               aria-hidden="true"
-                                                            v-bind:class="{ 'd-none': showIcon4 }"
-
+                              v-bind:class="{ 'd-none': showIcon4 }"
                             ></i>
                             <i
                               class="fa fa-chevron-up icon-close"
                               aria-hidden="true"
-                                v-bind:class="{ 'd-none': !showIcon4 }"
+                              v-bind:class="{ 'd-none': !showIcon4 }"
                             ></i>
                           </div>
                           <div
@@ -957,10 +950,11 @@
 
 
 <script>
-import BreadcrumbComponent from '../../components/BreadcrumbComponent.vue';
+import BreadcrumbComponent from "../../components/BreadcrumbComponent.vue";
 import ChartComponentVue from "../../components/ChartComponent.vue";
 import FooterComponentVue from "../../components/FooterComponent.vue";
 import HeaderComponentVue from "../../components/HeaderComponent.vue";
+import $ from 'jquery';
 
 export default {
   name: "",
@@ -990,9 +984,8 @@ export default {
       showIcon2: false, // Inicializa a variável showIcon como false
       showIcon3: false, // Inicializa a variável showIcon como false
       showIcon4: false, // Inicializa a variável showIcon como false
-      crumbs: ['Home', 'Category','Sub category'],
+      crumbs: ["Home", "Category", "Sub category"],
     };
-
   },
 
   methods: {
@@ -1017,7 +1010,27 @@ export default {
     },
   },
 
-  mounted() {},
+  mounted() {
+
+    const $element = $(this.$refs.myElement);
+
+    setInterval(() => {
+      $element.css({
+        'transition-duration': '600ms',
+        'transform': 'translate3d(-880px, 0px, 0px)'
+      });
+
+      setTimeout(() => {
+        $element.css({
+          'transition-duration': '',
+          'transform': ''
+        });
+      }, 600);
+
+    }, 12000);
+
+
+  },
 };
 </script>
 
