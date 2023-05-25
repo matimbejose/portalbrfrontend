@@ -40,7 +40,7 @@
                       <div class="icon">
                         <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
                       </div>
-                      <h4 class="title">Dispensas e inexigibilidade</h4>
+                      <h4 class="title">Dispensas</h4>
                     </div>
                   </a>
                 </div>
@@ -54,7 +54,7 @@
                       <div class="icon">
                         <i class="fa fa-folder-open" aria-hidden="true"></i>
                       </div>
-                      <h2 class="title">Ato de Adesão</h2>
+                      <h2 class="title">Adesão</h2>
                     </div>
                   </a>
                 </div>
@@ -68,7 +68,7 @@
                       <div class="icon">
                         <i class="fa fa-users" aria-hidden="true"></i>
                       </div>
-                      <h4 class="title">Chamamento Público</h4>
+                      <h4 class="title">Chamamento</h4>
                     </div>
                   </a>
                 </div>
@@ -129,7 +129,7 @@
                       <div class="icon">
                         <i class="fa fa-file" aria-hidden="true"></i>
                       </div>
-                      <h2 class="title">Atas de Registro de Preço</h2>
+                      <h2 class="title">Registro</h2>
                     </div>
                   </a>
                 </div>
@@ -143,7 +143,7 @@
                       <div class="icon">
                         <i class="fa fa-check-square" aria-hidden="true"></i>
                       </div>
-                      <h4 class="title">Contratação Direta</h4>
+                      <h4 class="title">Contratos</h4>
                     </div>
                   </a>
                 </div>
@@ -1027,7 +1027,7 @@ export default {
         });
       }, 600);
 
-    }, 12000);
+    }, 9000);
 
 
   },

@@ -164,7 +164,7 @@
                       ></i>
                     </div>
                     <h3 class="title">
-                      <a href="">Portal da Transparência</a>
+                      <a href="">Transparência</a>
                     </h3>
                   </div>
                 </div>
@@ -177,7 +177,7 @@
                     <div class="icon">
                       <i class="fa fa-money" aria-hidden="true"></i>
                     </div>
-                    <h4 class="title"><a href=""> Gestão Fiscal LRF</a></h4>
+                    <h4 class="title"><a href="">LRF</a></h4>
                   </div>
                 </div>
                 <div class="col-6 col-sm">
@@ -189,7 +189,7 @@
                     <div class="icon">
                       <i class="fa fa-volume-up" aria-hidden="true"></i>
                     </div>
-                    <h2 class="title"><a href="">Ouvidoria Municipal </a></h2>
+                    <h2 class="title"><a href="">Ouvidoria </a></h2>
                   </div>
                 </div>
                 <div class="col-6 col-sm">
@@ -201,7 +201,7 @@
                     <div class="icon">
                       <i class="fa fa-info" aria-hidden="true"></i>
                     </div>
-                    <h4 class="title"><a href="">Acesso a Informação </a></h4>
+                    <h4 class="title"><a href="">Informação </a></h4>
                   </div>
                 </div>
               </div>

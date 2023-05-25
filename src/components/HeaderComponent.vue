@@ -374,6 +374,7 @@ export default {
 
 
 <style>
+
 /* customize the drop down menu */
 .dropdown:hover .dropdown-menu {
   display: block;

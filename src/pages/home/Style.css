@@ -1,3 +1,9 @@
+@media (max-width: 768px) {
+  #hero {
+    height: 80vh;
+  }
+}
+
 #hero {
   background-image: url(../../assets/cidade.jpg);
   background-color: rgba(0, 0, 0, 0.5);
@@ -94,7 +100,6 @@
 }
 
 /* customize the second menu */
-
 .featured-services .icon-box {
   padding: 30px;
   position: relative;
@@ -103,6 +108,8 @@
   box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
   border-radius: 8px;
   z-index: 1;
+  margin: 15px;
+  
 }
 
 .featured-services .icon {
@@ -121,6 +128,13 @@
   font-size: 18px;
   color: #000000;
 }
+
+
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
 
 .featured-services .title a {
   color: #111;
@@ -243,5 +257,5 @@ a.btn.btn-success.d-block:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color:#DA4849;
+  color: #DA4849;
 }

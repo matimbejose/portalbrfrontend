@@ -51,8 +51,6 @@
   color: #aaaaaa;
 }
 
-
-
 .featured-services .icon-box:hover .icon i {
   color: #FFF;
 }
@@ -91,9 +89,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-
-
 
 
 .faq .faq-list .question {
@@ -236,8 +231,6 @@ ul {
 .d-none {
   display: none;
 }
-
-
 
 @media (min-width: 768px) {
 .col-md-4 {
