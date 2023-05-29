@@ -16,7 +16,7 @@
           <div class="container">
             <center>
               <div class="row">
-                <div class="col-6 col-sm">
+                <div class="col-6 col-md-2">
                   <a href="licitacaolista">
                     <div
                       class="icon-box aos-init aos-animate"
@@ -30,7 +30,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-6 col-sm">
+                <div class="col-6 col-md-2">
                   <a href="dispensaeinexigibilidade">
                     <div
                       class="icon-box aos-init aos-animate"
@@ -44,7 +44,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-6 col-sm">
+                <div class="col-6 col-md-2">
                   <a href="atodeadesao">
                     <div
                       class="icon-box aos-init aos-animate"
@@ -58,7 +58,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-6 col-sm">
+                <div class="col-6 col-md-2">
                   <a href="chamamento">
                     <div
                       class="icon-box aos-init aos-animate"
@@ -72,26 +72,8 @@
                     </div>
                   </a>
                 </div>
-              </div>
-            </center>
-          </div>
-        </div>
-      </section>
 
-      <!-- /PRIMEIRO BLOCO DE MENUS  -->
-
-      <!-- ======= SEGUNDO BLOCO DE MENUS =======  -->
-      <section
-        id="menu"
-        class="featured-services"
-        style="padding: 0px 0 60px 0"
-      >
-        <div class="container aos-init aos-animate" data-aos="fade-up">
-          <div class="container">
-            <center>
-              <div class="row">
-                <a href="contratos"> </a>
-                <div class="col-6 col-sm">
+                <div class="col-6 col-md-2">
                   <a href="contratos">
                     <div
                       class="icon-box aos-init aos-animate"
@@ -105,7 +87,8 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-6 col-sm">
+
+                <div class="col-6 col-md-2">
                   <a href="inidoneas">
                     <div
                       class="icon-box aos-init aos-animate"
@@ -119,7 +102,8 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-6 col-sm">
+
+                <div class="col-6 col-md-2">
                   <a href="atasregistro">
                     <div
                       class="icon-box aos-init aos-animate"
@@ -133,7 +117,8 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-6 col-sm">
+
+                <div class="col-6 col-md-2">
                   <a href="lei14133">
                     <div
                       class="icon-box aos-init aos-animate"
@@ -152,6 +137,11 @@
           </div>
         </div>
       </section>
+
+      <!-- /PRIMEIRO BLOCO DE MENUS  -->
+
+      <!-- ======= SEGUNDO BLOCO DE MENUS =======  -->
+    
       <!-- /SEGUNDO BLOCO DE MENUS   -->
 
       <!-- ======= Aviso de Licitação =======  -->
@@ -811,7 +801,7 @@
                               licitatório nas contratações da administração
                               pública, e a Lei 8.666/93, art. 2º, regulamento os
                               procedimentos, a fim de valer a obrigatoriedade
-                              dos mesmos.
+                              dos memd-2os.
                             </p>
                           </div>
                         </li>
@@ -954,7 +944,7 @@ import BreadcrumbComponent from "../../components/BreadcrumbComponent.vue";
 import ChartComponentVue from "../../components/ChartComponent.vue";
 import FooterComponentVue from "../../components/FooterComponent.vue";
 import HeaderComponentVue from "../../components/HeaderComponent.vue";
-import $ from 'jquery';
+import $ from "jquery";
 
 export default {
   name: "",
@@ -1011,25 +1001,21 @@ export default {
   },
 
   mounted() {
-
     const $element = $(this.$refs.myElement);
 
     setInterval(() => {
       $element.css({
-        'transition-duration': '600ms',
-        'transform': 'translate3d(-880px, 0px, 0px)'
+        "transition-duration": "600ms",
+        transform: "translate3d(-880px, 0px, 0px)",
       });
 
       setTimeout(() => {
         $element.css({
-          'transition-duration': '',
-          'transform': ''
+          "transition-duration": "",
+          transform: "",
         });
       }, 600);
-
     }, 9000);
-
-
   },
 };
 </script>
