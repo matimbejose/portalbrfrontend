@@ -53,10 +53,7 @@
     </section>
 
     <!-- Navigation -->
-    <nav
-      id="navabar"
-      class="navbar navbar-expand-lg navbar-white bg-white static-top sticky-top"
-    >
+    <nav id="navabar" class="navbar navbar-expand-lg navbar-white bg-white sticky-top desktop-navbar">
       <div class="container">
         <a @click.prevent="goToHome()" class="navbar-brand" href="#">
           <!-- <img :src="dados.logotipo" alt="logo" height="70" /> -->
@@ -279,7 +276,14 @@
                 aria-labelledby="navbarDropdown"
               >
                 <li><a class="dropdown-item" href="#">LEIS</a></li>
-                <li><a @click.prevent="goToLicitacoes()" class="dropdown-item" href="#">LICITAÇÃO</a></li>
+                <li>
+                  <a
+                    @click.prevent="goToLicitacoes()"
+                    class="dropdown-item"
+                    href="#"
+                    >LICITAÇÃO</a
+                  >
+                </li>
                 <li></li>
                 <li>
                   <a class="dropdown-item" href="#">LRF CONTAS PÚBLICAS</a>
@@ -342,6 +346,7 @@ export default {
   data() {
     return {
       dados: {},
+      navbarClasses: "",
     };
   },
 
@@ -359,21 +364,65 @@ export default {
         });
     },
     goToLicitacoes() {
-      this.$router.push('/licitacoes')
+      this.$router.push("/licitacoes");
     },
-      goToHome() {
-      this.$router.push('/')
-    }
+    goToHome() {
+      this.$router.push("/");
+    },
+    setNavbarClasses() {
+      const isMobile = window.innerWidth <= 768; // Exemplo: considerando 768px como o limite para dispositivos móveis
+
+      if (isMobile) {
+        this.navbarClasses =
+          "navbar-mobile";
+      } else {
+        this.navbarClasses =
+          "navbar navbar-expand-lg navbar-white bg-white sticky-top desktop-navbar";
+      }
+    },
   },
 
   mounted() {
     this.loadDate();
+    // Verificar o tipo de dispositivo ao montar o componente
+    this.setNavbarClasses();
+    // Reavaliar as classes quando a janela for redimensionada
+    window.addEventListener("resize", this.setNavbarClasses);
+  },
+  beforeUnmount() {
+    // Remover o ouvinte de evento antes de destruir o componente
+    window.removeEventListener("resize", this.setNavbarClasses);
   },
 };
 </script>
 
 
 <style>
+/* mobil navMenu */
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(9, 9, 9, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: #00A859;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
 
 /* customize the drop down menu */
 .dropdown:hover .dropdown-menu {
@@ -443,9 +492,9 @@ export default {
   color: #da4849;
 }
 
-
 /* trocou as fontes da navBar para bold */
-.navbar a, .navbar a:focus {
+.navbar a,
+.navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -456,15 +505,13 @@ export default {
   position: relative;
 }
 
-
 .navbar .dropdown ul a {
-
-    padding: 10px 20px;
-    font-weight: 400;
-
+  padding: 10px 20px;
+  font-weight: 400;
 }
 
-.navbar a, .navbar a:focus {
+.navbar a,
+.navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -476,5 +523,4 @@ export default {
   transition: 0.3s;
   position: relative;
 }
-
 </style>

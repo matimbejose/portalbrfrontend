@@ -47,7 +47,7 @@
       <section
         id="search-course"
         class="search-course-section search-course-secound"
-        style="background-color: #00a859 !important"
+        style="background-color: #00a859 !important; margin-top: 15px"
       >
         <div class="container">
           <div class="search-counter-up">
