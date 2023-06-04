@@ -53,10 +53,12 @@
     </section>
 
     <!-- Navigation -->
-    <nav id="navabar" class="navbar navbar-expand-lg navbar-white bg-white sticky-top desktop-navbar">
+    <nav
+      id="navabar"
+      class="navbar navbar-expand-lg navbar-white bg-white sticky-top"
+    >
       <div class="container">
         <a @click.prevent="goToHome()" class="navbar-brand" href="#">
-          <!-- <img :src="dados.logotipo" alt="logo" height="70" /> -->
           <img src="../assets/logo.png" alt="logo" height="70" />
         </a>
         <button
@@ -346,7 +348,6 @@ export default {
   data() {
     return {
       dados: {},
-      navbarClasses: "",
     };
   },
 
@@ -369,29 +370,10 @@ export default {
     goToHome() {
       this.$router.push("/");
     },
-    setNavbarClasses() {
-      const isMobile = window.innerWidth <= 768; // Exemplo: considerando 768px como o limite para dispositivos móveis
-
-      if (isMobile) {
-        this.navbarClasses =
-          "navbar-mobile";
-      } else {
-        this.navbarClasses =
-          "navbar navbar-expand-lg navbar-white bg-white sticky-top desktop-navbar";
-      }
-    },
   },
 
   mounted() {
     this.loadDate();
-    // Verificar o tipo de dispositivo ao montar o componente
-    this.setNavbarClasses();
-    // Reavaliar as classes quando a janela for redimensionada
-    window.addEventListener("resize", this.setNavbarClasses);
-  },
-  beforeUnmount() {
-    // Remover o ouvinte de evento antes de destruir o componente
-    window.removeEventListener("resize", this.setNavbarClasses);
   },
 };
 </script>
@@ -418,11 +400,10 @@ export default {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #00A859;
+  background-color: #00a859;
   overflow-y: auto;
   transition: 0.3s;
 }
-
 
 /* customize the drop down menu */
 .dropdown:hover .dropdown-menu {

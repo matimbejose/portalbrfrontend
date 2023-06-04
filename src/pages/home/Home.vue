@@ -2,12 +2,6 @@
   <div class="main">
     <div class="content" v-if="isLoading">
       <HeaderComponentVue />
-      <BreadcrumbComponent
-        class="row justify-content-center mt-4"
-        :crumbs="crumbs"
-        @selected="selected"
-      />
-
       <!-- ======= Imagem Principal ======= -->
       <section id="hero" class="d-flex align-items-center">
         <div class="container">
